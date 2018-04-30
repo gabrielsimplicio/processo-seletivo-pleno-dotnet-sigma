@@ -1,11 +1,14 @@
-CREATE DATABASE meupatromonio;
+CREATE DATABASE meupatrimonio;
 GO
 
-USE meupatromonio;
+USE meupatrimonio;
 GO
 
-CREATE LOGIN meupatromonio WITH PASSWORD = 'plenodotnetsigma';
+CREATE SCHEMA meupatrimonio;
 GO
 
-CREATE USER meupatromonio FOR LOGIN meupatromonio;
+CREATE LOGIN meupatrimonio WITH PASSWORD = 'plenodotnetsigma';
+GO
+
+CREATE USER meupatrimonio FOR LOGIN meupatrimonio WITH DEFAULT_SCHEMA = meupatrimonio;
 GO
