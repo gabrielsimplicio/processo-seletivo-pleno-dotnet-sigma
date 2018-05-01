@@ -1,5 +1,6 @@
 ﻿using MeuPatrimonio.Domain.Entities;
 using MeuPatrimonio.Infra.Data.Interfaces;
+using System;
 using System.Data.Entity;
 using System.Linq;
 
@@ -17,6 +18,11 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts
         {
             Set<TEntity>().Add(entity);
             SaveChanges();
+        }
+
+        public TEntity Find<TEntity>(Func<TEntity, bool> filter = null) where TEntity : class
+        {
+            return Set<TEntity>().FirstOrDefault(filter);
         }
 
         public IQueryable<TEntity> Query<TEntity>() where TEntity : class

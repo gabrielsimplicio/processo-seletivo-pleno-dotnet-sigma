@@ -48,6 +48,10 @@
       <Project>{5854e57f-44a7-40c5-84d9-6fd1fdcfb3bd}</Project>
       <Name>MeuPatrimonio.Domain.Repositories</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.Data\MeuPatrimonio.Infra.Data.csproj">
+      <Project>{0FDA5F9E-A5F2-4846-A7D1-36A4D82315E7}</Project>
+      <Name>MeuPatrimonio.Infra.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

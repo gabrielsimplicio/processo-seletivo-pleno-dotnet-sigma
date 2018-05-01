@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace MeuPatrimonio.Infra.Data.Interfaces
 {
@@ -7,6 +8,7 @@ namespace MeuPatrimonio.Infra.Data.Interfaces
         void Add<TEntity>(TEntity entity) where TEntity : class;
         void Remove<TEntity>(TEntity entity) where TEntity : class;
         void Update<TEntity>(TEntity entity) where TEntity : class;
+        TEntity Find<TEntity>(Func<TEntity, bool> filter = null) where TEntity : class;
         IQueryable<TEntity> Query<TEntity>() where TEntity : class;
     }
 }
