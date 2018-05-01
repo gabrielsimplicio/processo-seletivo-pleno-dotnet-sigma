@@ -40,10 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarcaRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MeuPatrimonio.Domain.Entities\MeuPatrimonio.Domain.Entities.csproj">
+      <Project>{738B90FE-557F-4196-A625-E9D641C690D5}</Project>
+      <Name>MeuPatrimonio.Domain.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MeuPatrimonio.Domain.Repositories\MeuPatrimonio.Domain.Repositories.csproj">
       <Project>{5854e57f-44a7-40c5-84d9-6fd1fdcfb3bd}</Project>
       <Name>MeuPatrimonio.Domain.Repositories</Name>

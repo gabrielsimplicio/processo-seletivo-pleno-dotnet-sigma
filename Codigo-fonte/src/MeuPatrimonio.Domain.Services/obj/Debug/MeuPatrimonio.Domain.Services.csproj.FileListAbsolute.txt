@@ -1,0 +1,6 @@
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\bin\Debug\MeuPatrimonio.Domain.Services.dll
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\bin\Debug\MeuPatrimonio.Domain.Services.pdb
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\obj\Debug\MeuPatrimonio.Domain.Services.csprojResolveAssemblyReference.cache
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\obj\Debug\MeuPatrimonio.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\obj\Debug\MeuPatrimonio.Domain.Services.dll
+C:\Users\levra\Documents\Projetos\processo-seletivo-pleno-dotnet-sigma\Codigo-fonte\src\MeuPatrimonio.Domain.Services\obj\Debug\MeuPatrimonio.Domain.Services.pdb
