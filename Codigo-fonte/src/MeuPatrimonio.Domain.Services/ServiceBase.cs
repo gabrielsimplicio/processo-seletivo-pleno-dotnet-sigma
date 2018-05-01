@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using MeuPatrimonio.Domain.Repositories.Interfaces;
 using MeuPatrimonio.Domain.Services.Interfaces;
 using MeuPatrimonio.Domain.Validations.Interfaces;
@@ -29,7 +31,7 @@ namespace MeuPatrimonio.Domain.Services
             return Repository.Add(entity);
         }
 
-        public IEnumerable<TEntity> GetAll(Func<TEntity, bool> filter = null)
+        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null)
         {
             return Repository.GetAll(filter);
         }

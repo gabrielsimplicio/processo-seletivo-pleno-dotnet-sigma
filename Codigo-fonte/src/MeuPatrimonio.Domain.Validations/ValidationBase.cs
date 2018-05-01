@@ -3,6 +3,8 @@ using MeuPatrimonio.Domain.Validations.Interfaces;
 using MeuPatrimonio.Infra.CrossCutting.Types;
 using System.Collections.Generic;
 using MeuPatrimonio.Infra.CrossCutting.Enums;
+using MeuPatrimonio.Infra.Data.Repositories;
+using MeuPatrimonio.Domain.Repositories.Interfaces;
 
 namespace MeuPatrimonio.Domain.Validations
 {
@@ -11,9 +13,15 @@ namespace MeuPatrimonio.Domain.Validations
         public TEntity Entity;
         public IList<Mensagem> InvalidMessages;
         public IList<ValidationItem<TEntity>> Itens;
+        public IRepositoryBase<TEntity> Repository;
 
         public ValidationBase()
         {
+        }
+
+        public ValidationBase(IRepositoryBase<TEntity> repository)
+        {
+            Repository = repository;
         }
 
         public void Add(ValidationItem<TEntity> item)

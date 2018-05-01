@@ -7,6 +7,8 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Configurations
     {
         public MarcaConfiguration()
         {
+            ToTable("MARCA", "meupatrimonio");
+
             HasKey(marca => marca.Id);
 
             Property(marca => marca.Nome)

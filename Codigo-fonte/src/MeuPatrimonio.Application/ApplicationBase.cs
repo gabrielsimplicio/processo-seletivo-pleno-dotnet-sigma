@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using AutoMapper;
 using MeuPatrimonio.Application.Interfaces;
 using MeuPatrimonio.Domain.Services.Interfaces;
@@ -20,9 +22,16 @@ namespace MeuPatrimonio.Application
             return Mapper.Map<TEntityDTO>(Service.Add(Mapper.Map<TEntity>(entityDTO)));
         }
 
-        public IEnumerable<TEntityDTO> GetAll(Func<TEntityDTO, bool> filter = null)
+        public IList<TEntityDTO> GetAll(Expression<Func<TEntityDTO, bool>> filter = null)
         {
-            return Mapper.Map<IEnumerable<TEntityDTO>>(Service.GetAll(Mapper.Map<Func<TEntity, bool>>(filter)));
+            var lista = Service.GetAll(Mapper.Map<Expression<Func<TEntity, bool>>>(filter));
+
+            if (lista != null && lista.Count() > 0)
+            {
+                return Mapper.Map<IList<TEntityDTO>>(lista);
+            }
+
+            return null;
         }
 
         public TEntityDTO GetById(int id)

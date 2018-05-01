@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace MeuPatrimonio.Domain.Repositories.Interfaces
 {
@@ -9,6 +10,7 @@ namespace MeuPatrimonio.Domain.Repositories.Interfaces
         void Remove(TEntity entity);
         TEntity Update(TEntity entity);
         TEntity GetById(int id);
-        IEnumerable<TEntity> GetAll(Func<TEntity, bool> filter = null);
+        IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null);
+        bool Exists(Func<TEntity, bool> filter = null);
     }
 }

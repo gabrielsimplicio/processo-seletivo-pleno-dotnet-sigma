@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 
 namespace MeuPatrimonio.Application.Interfaces
 {
@@ -9,6 +10,6 @@ namespace MeuPatrimonio.Application.Interfaces
         void Remove(TEntityDto entityDTO);
         TEntityDto Update(TEntityDto entityDTO);
         TEntityDto GetById(int id);
-        IEnumerable<TEntityDto> GetAll(Func<TEntityDto, bool> filter = null);
+        IList<TEntityDto> GetAll(Expression<Func<TEntityDto, bool>> filter = null);
     }
 }

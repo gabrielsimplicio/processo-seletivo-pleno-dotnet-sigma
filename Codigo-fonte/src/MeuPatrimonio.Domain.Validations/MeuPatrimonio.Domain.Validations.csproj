@@ -52,9 +52,17 @@
       <Project>{738B90FE-557F-4196-A625-E9D641C690D5}</Project>
       <Name>MeuPatrimonio.Domain.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Domain.Repositories\MeuPatrimonio.Domain.Repositories.csproj">
+      <Project>{5854e57f-44a7-40c5-84d9-6fd1fdcfb3bd}</Project>
+      <Name>MeuPatrimonio.Domain.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MeuPatrimonio.Infra.CrossCutting\MeuPatrimonio.Infra.CrossCutting.csproj">
       <Project>{F085ED78-3E14-41F5-BBD6-94BA9A71A22E}</Project>
       <Name>MeuPatrimonio.Infra.CrossCutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.Data.Repositories\MeuPatrimonio.Infra.Data.Repositories.csproj">
+      <Project>{ffd0f819-6b49-41cf-a8fb-4ec7c0d3809e}</Project>
+      <Name>MeuPatrimonio.Infra.Data.Repositories</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

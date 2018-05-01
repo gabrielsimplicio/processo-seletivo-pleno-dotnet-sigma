@@ -87,6 +87,10 @@
       <Project>{7421CB56-9AF5-4ECA-BDAC-94AEBEB71416}</Project>
       <Name>MeuPatrimonio.Domain.Validations</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.CrossCutting\MeuPatrimonio.Infra.CrossCutting.csproj">
+      <Project>{f085ed78-3e14-41f5-bbd6-94ba9a71a22e}</Project>
+      <Name>MeuPatrimonio.Infra.CrossCutting</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MeuPatrimonio.Infra.Data.ORM.EntityFramework\MeuPatrimonio.Infra.Data.ORM.EntityFramework.csproj">
       <Project>{06B4E54A-ACB2-40F7-B61D-513715DE0CD2}</Project>
       <Name>MeuPatrimonio.Infra.Data.ORM.EntityFramework</Name>
