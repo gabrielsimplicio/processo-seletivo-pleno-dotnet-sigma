@@ -12,3 +12,6 @@ GO
 
 CREATE USER meupatrimonio FOR LOGIN meupatrimonio WITH DEFAULT_SCHEMA = meupatrimonio;
 GO
+
+GRANT execute,select,insert,update,delete TO MEUPATRIMONIO
+GO
