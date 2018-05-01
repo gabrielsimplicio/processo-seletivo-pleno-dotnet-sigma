@@ -15,9 +15,9 @@ namespace MeuPatrimonio.Infra.Data.Repositories
             Context = context;
         }
 
-        public void Add(TEntity entity)
+        public TEntity Add(TEntity entity)
         {
-            Context.Add(entity);
+            return Context.Add(entity);
         }
 
         public IEnumerable<TEntity> GetAll(Func<TEntity, bool> filter = null)
@@ -40,9 +40,9 @@ namespace MeuPatrimonio.Infra.Data.Repositories
             Context.Remove(entity);
         }
 
-        public void Update(TEntity entity)
+        public TEntity Update(TEntity entity)
         {
-            Context.Update(entity);
+            return Context.Update(entity);
         }
     }
 }

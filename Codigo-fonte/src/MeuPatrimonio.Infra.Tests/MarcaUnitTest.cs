@@ -1,5 +1,4 @@
-﻿using System;
-using MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts;
+﻿using MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts;
 using MeuPatrimonio.Infra.Data.Repositories;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

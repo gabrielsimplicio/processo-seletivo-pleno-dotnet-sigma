@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MeuPatrimonio.Domain.Repositories.Interfaces
+namespace MeuPatrimonio.Domain.Services.Interfaces
 {
-    public interface IRepositoryBase<TEntity> where TEntity : class
+    public interface IServiceBase<TEntity> where TEntity : class
     {
         TEntity Add(TEntity entity);
         void Remove(TEntity entity);

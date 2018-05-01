@@ -14,10 +14,12 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts
 
         public DbSet<Marca> Marcas { get; set; }
 
-        public void Add<TEntity>(TEntity entity) where TEntity : class
+        public TEntity Add<TEntity>(TEntity entity) where TEntity : class
         {
             Set<TEntity>().Add(entity);
             SaveChanges();
+
+            return entity;
         }
 
         public TEntity Find<TEntity>(Func<TEntity, bool> filter = null) where TEntity : class
@@ -36,10 +38,11 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts
             SaveChanges();
         }
 
-        public void Update<TEntity>(TEntity entity) where TEntity : class
+        public TEntity Update<TEntity>(TEntity entity) where TEntity : class
         {
             Entry(entity).State = EntityState.Modified;
             SaveChanges();
+            return entity;
         }
     }
 }
