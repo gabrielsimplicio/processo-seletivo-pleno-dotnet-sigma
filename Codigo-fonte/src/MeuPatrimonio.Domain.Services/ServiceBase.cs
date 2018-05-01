@@ -13,10 +13,6 @@ namespace MeuPatrimonio.Domain.Services
         IValidationBase<TEntity> Validation;
         IRepositoryBase<TEntity> Repository;
 
-        public ServiceBase()
-        {
-        }
-
         public ServiceBase(IValidationBase<TEntity> validation, IRepositoryBase<TEntity> repository)
         {
             Validation = validation;

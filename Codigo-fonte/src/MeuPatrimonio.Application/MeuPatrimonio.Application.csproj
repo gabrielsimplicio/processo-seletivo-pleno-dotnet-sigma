@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationBase.cs" />
+    <Compile Include="AutoMapper\AutoMapperConfiguration.cs" />
     <Compile Include="Interfaces\IApplicationBase.cs" />
     <Compile Include="Interfaces\IMarcaApplication.cs" />
     <Compile Include="MarcaApplication.cs" />

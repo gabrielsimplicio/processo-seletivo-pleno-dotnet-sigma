@@ -38,6 +38,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
     </Reference>
@@ -45,6 +51,7 @@
       <HintPath>..\..\packages\MSTest.TestFramework.1.2.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +59,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -67,9 +75,29 @@
       <Project>{738B90FE-557F-4196-A625-E9D641C690D5}</Project>
       <Name>MeuPatrimonio.Domain.Entities</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Domain.Repositories\MeuPatrimonio.Domain.Repositories.csproj">
+      <Project>{5854E57F-44A7-40C5-84D9-6FD1FDCFB3BD}</Project>
+      <Name>MeuPatrimonio.Domain.Repositories</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MeuPatrimonio.Domain.Services\MeuPatrimonio.Domain.Services.csproj">
       <Project>{8FE44F9F-5756-41FD-9FE0-A390B3F8264B}</Project>
       <Name>MeuPatrimonio.Domain.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Domain.Validations\MeuPatrimonio.Domain.Validations.csproj">
+      <Project>{7421CB56-9AF5-4ECA-BDAC-94AEBEB71416}</Project>
+      <Name>MeuPatrimonio.Domain.Validations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.Data.ORM.EntityFramework\MeuPatrimonio.Infra.Data.ORM.EntityFramework.csproj">
+      <Project>{06B4E54A-ACB2-40F7-B61D-513715DE0CD2}</Project>
+      <Name>MeuPatrimonio.Infra.Data.ORM.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.Data.Repositories\MeuPatrimonio.Infra.Data.Repositories.csproj">
+      <Project>{FFD0F819-6B49-41CF-A8FB-4EC7C0D3809E}</Project>
+      <Name>MeuPatrimonio.Infra.Data.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MeuPatrimonio.Infra.Data\MeuPatrimonio.Infra.Data.csproj">
+      <Project>{0FDA5F9E-A5F2-4846-A7D1-36A4D82315E7}</Project>
+      <Name>MeuPatrimonio.Infra.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
