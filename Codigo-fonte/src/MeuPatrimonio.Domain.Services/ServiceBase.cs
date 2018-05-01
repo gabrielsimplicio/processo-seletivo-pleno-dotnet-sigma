@@ -1,34 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using MeuPatrimonio.Domain.Repositories.Interfaces;
 using MeuPatrimonio.Domain.Services.Interfaces;
+using MeuPatrimonio.Domain.Validations.Interfaces;
+using MeuPatrimonio.Infra.CrossCutting.Enums;
+using MeuPatrimonio.Infra.CrossCutting.Exceptions;
 
 namespace MeuPatrimonio.Domain.Services
 {
     public class ServiceBase<TEntity> : IServiceBase<TEntity> where TEntity : class
     {
+        IValidationBase<TEntity> Validation;
+        IRepositoryBase<TEntity> Repository;
+
+        public ServiceBase()
+        {
+        }
+
+        public ServiceBase(IValidationBase<TEntity> validation, IRepositoryBase<TEntity> repository)
+        {
+            Validation = validation;
+            Repository = repository;
+        }
+
         public TEntity Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            if (!Validation.IsValid(entity, AcaoEnum.Adicionar))
+            {
+                throw new ValidacaoException(Validation.GetInvalidMessages());
+            }
+
+            return Repository.Add(entity);
         }
 
         public IEnumerable<TEntity> GetAll(Func<TEntity, bool> filter = null)
         {
-            throw new NotImplementedException();
+            return Repository.GetAll(filter);
         }
 
         public TEntity GetById(int id)
         {
-            throw new NotImplementedException();
+            return Repository.GetById(id);
         }
 
         public void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+            if (!Validation.IsValid(entity, AcaoEnum.Excluir))
+            {
+                throw new ValidacaoException(Validation.GetInvalidMessages());
+            }
+            Repository.Remove(entity);
         }
 
         public TEntity Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            if (!Validation.IsValid(entity, AcaoEnum.Editar))
+            {
+                throw new ValidacaoException(Validation.GetInvalidMessages());
+            }
+            return Repository.Update(entity);
         }
     }
 }

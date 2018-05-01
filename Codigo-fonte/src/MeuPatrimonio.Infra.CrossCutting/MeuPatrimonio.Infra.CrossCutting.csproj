@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\AcaoEnum.cs" />
+    <Compile Include="Exceptions\ValidacaoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Types\Mensagem.cs" />
   </ItemGroup>

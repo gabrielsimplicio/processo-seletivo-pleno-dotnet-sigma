@@ -1,4 +1,5 @@
-﻿using MeuPatrimonio.Infra.CrossCutting.Types;
+﻿using MeuPatrimonio.Infra.CrossCutting.Enums;
+using MeuPatrimonio.Infra.CrossCutting.Types;
 using System;
 
 namespace MeuPatrimonio.Domain.Validations
@@ -8,14 +9,16 @@ namespace MeuPatrimonio.Domain.Validations
         public TEntity Entity;
         public Mensagem Message { get; set; }
         public Func<TEntity, bool> Rule;
+        public AcaoEnum Action;
 
-        public static ValidationItem<TEntity> Create(TEntity entity, Func<TEntity, bool> rule, Mensagem message)
+        public static ValidationItem<TEntity> Create(TEntity entity, AcaoEnum action, Func<TEntity, bool> rule, Mensagem message)
         {
             return new ValidationItem<TEntity>
             {
                 Entity = entity,
                 Message = message,
-                Rule = rule
+                Rule = rule,
+                Action = action
             };
         }
 

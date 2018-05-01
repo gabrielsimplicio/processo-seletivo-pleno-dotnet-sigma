@@ -2,6 +2,7 @@
 using MeuPatrimonio.Domain.Validations.Interfaces;
 using MeuPatrimonio.Infra.CrossCutting.Types;
 using System.Collections.Generic;
+using MeuPatrimonio.Infra.CrossCutting.Enums;
 
 namespace MeuPatrimonio.Domain.Validations
 {
@@ -9,10 +10,20 @@ namespace MeuPatrimonio.Domain.Validations
     {
         public TEntity Entity;
         public IList<Mensagem> InvalidMessages;
-        public IList<ValidationItem<TEntity>> Features;
+        public IList<ValidationItem<TEntity>> Itens;
 
         public ValidationBase()
         {
+        }
+
+        public void Add(ValidationItem<TEntity> item)
+        {
+            if (Itens == null)
+            {
+                Itens = new List<ValidationItem<TEntity>>();
+            }
+
+            Itens.Add(item);
         }
 
         public virtual void CreateAttributeValidations(TEntity entity)
@@ -23,27 +34,24 @@ namespace MeuPatrimonio.Domain.Validations
         {
         }
 
-        public void Add(ValidationItem<TEntity> item)
+        public IList<Mensagem> GetInvalidMessages()
         {
-            if (Features == null)
-            {
-                Features = new List<ValidationItem<TEntity>>();
-            }
-
-            Features.Add(item);
+            return InvalidMessages;
         }
 
-        public virtual bool IsValid(TEntity entity)
+        public virtual bool IsValid(TEntity entity, AcaoEnum action)
         {
-            Features = new List<ValidationItem<TEntity>>();
+            Itens = new List<ValidationItem<TEntity>>();
             InvalidMessages = new List<Mensagem>();
 
             CreateAttributeValidations(entity);
             CreateBusinessRuleValidations(entity);
 
-            if (Features != null && Features.Count > 0)
+            Itens = Itens.Where(f => (f.Action & action) > 0).ToList();
+
+            if (Itens != null && Itens.Count > 0)
             {
-                Features.ToList().ForEach(feature =>
+                Itens.ToList().ForEach(feature =>
                 {
                     if (!feature.IsValid())
                     {
