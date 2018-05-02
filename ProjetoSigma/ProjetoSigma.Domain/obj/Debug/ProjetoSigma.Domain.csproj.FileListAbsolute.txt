@@ -1,0 +1,24 @@
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.dll
+C:\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csprojResolveAssemblyReference.cache
+C:\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csproj.CoreCompileInputs.cache
+C:\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.dll
+C:\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain\obj\Debug\ProjetoSigma.Domain.pdb

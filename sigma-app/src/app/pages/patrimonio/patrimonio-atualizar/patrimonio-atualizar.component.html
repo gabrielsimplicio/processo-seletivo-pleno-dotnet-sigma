@@ -1,0 +1,49 @@
+<div class="content">
+    <h1>Atualizar Patrimônio</h1>
+    <div class="box">
+        <div class="columns">
+                <label class="label">Nome : {{ patrimonio.Id }}</label>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Nome</label>
+                <div class="control">
+                    <input [(ngModel)]="patrimonio.Nome" class="input" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Descrição</label>
+                <div class="control">
+                    <input [(ngModel)]="patrimonio.Descricao" class="input" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Marca</label>
+                <div class="control">
+                    <select class="select" [(ngModel)]="patrimonio.MarcaId">
+                        <option *ngFor="let marca of marcas" [ngValue]="marca.Id">{{marca.Nome}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Modelo</label>
+                <div class="control">
+                    <select class="select" [(ngModel)]="patrimonio.ModeloId">
+                        <option *ngFor="let modelo of modelos" [ngValue]="modelo.Id">{{modelo.Nome}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <a (click)="onSalvar()" class="button is-link">Salvar</a>
+            </div>
+        </div>
+    </div>
+</div>

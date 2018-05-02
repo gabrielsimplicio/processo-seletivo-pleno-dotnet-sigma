@@ -1,0 +1,15 @@
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting\obj\Debug\ProjetoSigma.Infra.CrossCutting.pdb

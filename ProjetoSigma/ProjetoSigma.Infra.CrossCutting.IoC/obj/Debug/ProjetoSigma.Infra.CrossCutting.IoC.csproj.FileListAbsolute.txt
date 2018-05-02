@@ -1,0 +1,69 @@
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.xml
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.xml
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.pdb
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.xml
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Application.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\SimpleInjector.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\AutoMapper.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Infra.CrossCutting.IoC\obj\Debug\ProjetoSigma.Infra.CrossCutting.IoC.pdb

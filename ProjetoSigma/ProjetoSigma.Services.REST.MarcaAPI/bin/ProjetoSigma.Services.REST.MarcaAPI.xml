@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProjetoSigma.Services.REST.MarcaAPI</name>
+    </assembly>
+    <members>
+        <member name="M:ProjetoSigma.Services.REST.MarcaAPI.App_Start.SimpleInjectorWebApiInitializer.Initialize">
+            <summary>Initialize the container and register it as Web API Dependency Resolver.</summary>
+        </member>
+    </members>
+</doc>
