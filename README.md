@@ -102,7 +102,7 @@ Cada entidade tem uma classe para validação. Esta classe consegue distinguir v
 
 ### Desacoplamento da fonte de dados
 
-Como objetivo de evitar o alto acoplamento de uma tecnologia de fonte de dados (EntityFrameowork, NHibernate, etc) foi criada a interface IDatasourceContext. O projeto só reconhece esta interface para acessar a fonte de dados. Logo, o uso dessas tecnologias, idenpendente de qual seja, deve implementar esta interface, para que a aplicação consiga acessar.
+Como objetivo de evitar o alto acoplamento de uma tecnologia de fonte de dados (EntityFramework, NHibernate, etc) foi criada a interface IDatasourceContext. O projeto só reconhece esta interface para acessar a fonte de dados. Logo, o uso dessas tecnologias, idenpendente de qual seja, deve implementar esta interface, para que a aplicação consiga acessar.
 
 
 ## Considerações
@@ -117,6 +117,7 @@ Como objetivo de evitar o alto acoplamento de uma tecnologia de fonte de dados (
 
 * Nâo utilizei o Swagger
 * Creio que não criei os métodos da API como o esperado em termos de nomenclatura e roteamento, como descrito no requisito.
+
 
 ### Agradeço a oportunidade
 # Levrangeles da Silva Filho
