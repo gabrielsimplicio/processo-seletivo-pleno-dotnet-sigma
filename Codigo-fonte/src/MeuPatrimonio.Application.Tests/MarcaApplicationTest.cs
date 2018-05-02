@@ -1,9 +1,9 @@
 ﻿using System.Linq;
-using MeuPatrimonio.Application.AutoMapper;
 using MeuPatrimonio.Domain.DTOs;
 using MeuPatrimonio.Domain.Repositories.Interfaces;
 using MeuPatrimonio.Domain.Services;
 using MeuPatrimonio.Domain.Validations;
+using MeuPatrimonio.Infra.CrossCutting.AutoMapper;
 using MeuPatrimonio.Infra.CrossCutting.Exceptions;
 using MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts;
 using MeuPatrimonio.Infra.Data.Repositories;

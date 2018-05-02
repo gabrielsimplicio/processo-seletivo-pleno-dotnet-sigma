@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace MeuPatrimonio.Application.AutoMapper
+namespace MeuPatrimonio.Infra.CrossCutting.AutoMapper
 {
     public class AutoMapperConfiguration
     {
