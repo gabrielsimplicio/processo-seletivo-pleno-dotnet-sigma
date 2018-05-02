@@ -1,0 +1,36 @@
+USE patrimonio
+GO
+
+*************************** Tabela Marca ***************************
+CREATE TABLE dbo.MARCA(
+	ID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	NOME varchar(100) NOT NULL,
+)
+
+CREATE INDEX idx_nome ON dbo.Marca (NOME);
+
+*************************** Tabela Modelo ***************************
+CREATE TABLE dbo.MODELO(
+	ID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	NOME varchar(100) NOT NULL,
+)
+
+CREATE INDEX idx_modelo ON dbo.Modelo (NOME);
+
+
+*************************** Tabela Patrimonio ***************************
+CREATE TABLE PATRIMONIO (
+    ID int IDENTITY(1,1) NOT NULL,
+    MARCA_ID int NOT NULL,
+	MODELO_ID int NOT NULL,
+	NOME varchar(100) NOT NULL,
+	DESCRICAO varchar(100),
+	NUMERO_TOMBO varchar(100),
+    PRIMARY KEY (ID),
+    CONSTRAINT FK_MarcaPatrimonio FOREIGN KEY (MARCA_ID) REFERENCES MARCA(ID),
+	CONSTRAINT FK_ModeloPatrimonio FOREIGN KEY (MODELO_ID) REFERENCES MODELO(ID)
+);
+
+
+CREATE INDEX idx_patrimonio_nome ON dbo.Patrimonio (NOME);
+
