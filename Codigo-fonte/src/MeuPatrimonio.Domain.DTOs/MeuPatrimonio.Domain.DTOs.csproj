@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="DTOBase.cs" />
     <Compile Include="MarcaDTO.cs" />
+    <Compile Include="ModeloDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

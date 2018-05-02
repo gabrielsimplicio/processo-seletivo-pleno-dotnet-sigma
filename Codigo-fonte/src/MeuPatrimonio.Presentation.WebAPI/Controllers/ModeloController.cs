@@ -8,21 +8,21 @@ using System.Web.Http.Results;
 
 namespace MeuPatrimonio.Presentation.WebAPI.Controllers
 {
-    public class MarcaController : ApiController
+    public class ModeloController : ApiController
     {
-        private readonly IMarcaApplication Application;
+        private readonly IModeloApplication Application;
 
-        public MarcaController(IMarcaApplication application)
+        public ModeloController(IModeloApplication application)
         {
             Application = application;
         }
 
         [HttpPost]
-        public IHttpActionResult Cadastrar(MarcaDTO marca)
+        public IHttpActionResult Cadastrar(ModeloDTO Modelo)
         {
             try
             {
-                return Ok(Application.Add(marca));
+                return Ok(Application.Add(Modelo));
             }
             catch (ValidacaoException exc)
             {
@@ -35,11 +35,11 @@ namespace MeuPatrimonio.Presentation.WebAPI.Controllers
         }
 
         [HttpPut]
-        public IHttpActionResult Editar(MarcaDTO marca)
+        public IHttpActionResult Editar(ModeloDTO Modelo)
         {
             try
             {
-                return Ok(Application.Update(marca));
+                return Ok(Application.Update(Modelo));
             }
             catch (ValidacaoException exc)
             {

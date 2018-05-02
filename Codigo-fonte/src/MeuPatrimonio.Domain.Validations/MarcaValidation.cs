@@ -41,7 +41,11 @@ namespace MeuPatrimonio.Domain.Validations
                 (
                     Entity,
                     (AcaoEnum.Adicionar | AcaoEnum.Editar),
-                    (marca => !string.IsNullOrEmpty(marca.Nome) && !Repository.Exists(c => c.Nome.ToLower() == marca.Nome.ToLower())),
+                    (marca => 
+                        !string.IsNullOrEmpty(marca.Nome) && 
+                        !Repository.Exists(source => 
+                            (marca.Id > 0 && source.Id != marca.Id && source.Nome.ToLower() == marca.Nome.ToLower()) || 
+                            (marca.Id <= 0 && source.Nome.ToLower() == marca.Nome.ToLower()))),
                     new Mensagem { Texto = "Nome da marca já existe" }
                 );
             }

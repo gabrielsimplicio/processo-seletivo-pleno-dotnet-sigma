@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configurations\MarcaConfiguration.cs" />
+    <Compile Include="Configurations\ModeloConfiguration.cs" />
     <Compile Include="Contexts\MeuPatrimonioContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

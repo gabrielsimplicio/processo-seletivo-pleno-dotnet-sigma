@@ -8,6 +8,7 @@ namespace MeuPatrimonio.Domain.Services.Interfaces
     {
         TEntity Add(TEntity entity);
         void Remove(TEntity entity);
+        void RemoveById(int id);
         TEntity Update(TEntity entity);
         TEntity GetById(int id);
         IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> filter = null);

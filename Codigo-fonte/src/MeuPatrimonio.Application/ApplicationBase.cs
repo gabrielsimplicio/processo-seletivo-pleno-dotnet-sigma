@@ -44,7 +44,12 @@ namespace MeuPatrimonio.Application
             Service.Remove(Mapper.Map<TEntity>(entityDTO));
         }
 
-        public TEntityDTO Update(TEntityDTO entityDTO)
+        public void RemoveById(int id)
+        {
+            Service.RemoveById(id);
+        }
+
+        public virtual TEntityDTO Update(TEntityDTO entityDTO)
         {
             return Mapper.Map<TEntityDTO>(Service.Update(Mapper.Map<TEntity>(entityDTO)));
         }

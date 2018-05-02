@@ -13,6 +13,7 @@ namespace MeuPatrimonio.Infra.CrossCutting.AutoMapper
         {
             Mapper.Initialize(mapper =>
             {
+                #region Marca
                 mapper.CreateMap<MarcaDTO, Marca>();
                 mapper.CreateMap<Expression<Func<MarcaDTO, bool>>, Expression<Func<Marca, bool>>>();
 
@@ -20,6 +21,17 @@ namespace MeuPatrimonio.Infra.CrossCutting.AutoMapper
                 mapper.CreateMap<Marca, MarcaDTO>();
                 mapper.CreateMap<IList<Marca>, IList<MarcaDTO>>();
                 mapper.CreateMap<Expression<Func<Marca, bool>>, Expression<Func<MarcaDTO, bool>>>();
+                #endregion
+
+                #region Modelo
+                mapper.CreateMap<ModeloDTO, Modelo>();
+                mapper.CreateMap<Expression<Func<ModeloDTO, bool>>, Expression<Func<Modelo, bool>>>();
+
+
+                mapper.CreateMap<Modelo, ModeloDTO>();
+                mapper.CreateMap<IList<Modelo>, IList<ModeloDTO>>();
+                mapper.CreateMap<Expression<Func<Modelo, bool>>, Expression<Func<ModeloDTO, bool>>>();
+                #endregion
             });
         }
     }

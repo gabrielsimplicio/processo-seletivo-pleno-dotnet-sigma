@@ -41,8 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IMarcaValidation.cs" />
+    <Compile Include="Interfaces\IModeloValidation.cs" />
     <Compile Include="Interfaces\IValidationBase.cs" />
     <Compile Include="MarcaValidation.cs" />
+    <Compile Include="ModeloValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValidationBase.cs" />
     <Compile Include="ValidationItem.cs" />

@@ -51,6 +51,17 @@ namespace MeuPatrimonio.Domain.Services
             Repository.Remove(entity);
         }
 
+        public void RemoveById(int id)
+        {
+            var entity = Repository.GetById(id);
+
+            if (!Validation.IsValid(entity, AcaoEnum.Excluir))
+            {
+                throw new ValidacaoException(Validation.GetInvalidMessages());
+            }
+            Repository.Remove(entity);
+        }
+
         public TEntity Update(TEntity entity)
         {
             if (!Validation.IsValid(entity, AcaoEnum.Editar))

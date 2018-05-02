@@ -32,19 +32,26 @@ namespace MeuPatrimonio.Presentation.WebAPI
                 defaults: new { id = RouteParameter.Optional }
             );
             
-            config.Formatters.JsonFormatter.SupportedMediaTypes
-                .Add(new MediaTypeHeaderValue("text/html"));
+            //JSON
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+            config.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 
+            //AutoMapper
             AutoMapperConfiguration.Configure();
 
+            //IoC - Unity
             var container = new UnityContainer();
-
             container.RegisterType<IDatasourceContext, MeuPatrimonioContext>(new HierarchicalLifetimeManager());
 
             container.RegisterType<IMarcaApplication, MarcaApplication>(new HierarchicalLifetimeManager());
             container.RegisterType<IMarcaService, MarcaService>(new HierarchicalLifetimeManager());
             container.RegisterType<IMarcaRepository, MarcaRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<IMarcaValidation, MarcaValidation>(new HierarchicalLifetimeManager());
+
+            container.RegisterType<IModeloApplication, ModeloApplication>(new HierarchicalLifetimeManager());
+            container.RegisterType<IModeloService, ModeloService>(new HierarchicalLifetimeManager());
+            container.RegisterType<IModeloRepository, ModeloRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<IModeloValidation, ModeloValidation>(new HierarchicalLifetimeManager());
 
             config.DependencyResolver = new UnityDependencyResolver(container);
         }

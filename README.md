@@ -1,6 +1,17 @@
-# Processo Seletivo Pleno DotNet da Sigma/TJMT
+# Sistema "Meu Patrimônio"
 
-Bem-vindo ao processo seletivo para desenvolvedor pleno dotnet da Sigma/TJMT!
+Gerenciamento de patromônio
+
+
+
+
+
+
+
+
+
+
+
 
 ## O desafio
 

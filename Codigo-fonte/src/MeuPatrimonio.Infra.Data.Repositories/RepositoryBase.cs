@@ -46,6 +46,11 @@ namespace MeuPatrimonio.Infra.Data.Repositories
             Context.Remove(entity);
         }
 
+        public void RemoveById(int id)
+        {
+            Context.Remove(GetById(id));
+        }
+
         public TEntity Update(TEntity entity)
         {
             return Context.Update(entity);
