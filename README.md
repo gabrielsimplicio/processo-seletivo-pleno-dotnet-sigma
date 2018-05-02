@@ -67,5 +67,16 @@ Sistema para gerenciar patrimônios de uma organização.
 	* MODELO(Id, MarcaId, Nome) 
 	* PATRIMONIO(Id, MarcaId, ModeloId, Nome, Descricao, Tombo)
 	
-* Foi criada a sequencia 'SEQ_PATRIMONIO_TOMBO' para atribuir automaticamente o número do tombo no patrimonio
+* Foi criada a sequência 'SEQ_PATRIMONIO_TOMBO' para atribuir automaticamente o número do tombo no patrimonio
+
+### Código fonte
+
+* .NET Framework 4.6.1
+* Linguagem de programação C#
+* Arquitetura do projeto em Domain Driven Design (DDD)
+* Service API REST em APS.NET Web API 2 
+* Injeção de dependência usando Unity
+* Conversão de classes DTO para classes de domínio usando AutoMapper
+* Mapeamento de objeto relacional (ORM) usando Entity Framework 6
+* Alguns testes unitários usando Microsoft Unit Testing
 
