@@ -93,11 +93,30 @@ abstraídas para prover o melhor desempenho possível ao criar novas classes ou 
 O projeto começou com a criação do modelo relacional no banco de dados. Para solucionar o problema da numeração automática do tomo
 do patrimônio, foi criada uma sequencia, ligada diretamente com a coluna 'Tomo' da tabela 'Patrimonio'.
 
-Em seguida, foi elaborada a estrutura do DDD. Cada classe básica (Base) contém métodos para resolver ações básicas como Cadastrar, Editar, Excluir, Buscar por Id, Listar e Listar com Filtros.
+Em seguida, foi elaborada a estrutura do DDD. Cada classe básica (Base) contém métodos para resolver ações básicas como Cadastrar, Editar, Excluir, Buscar por Id, Listar e Listar com Filtros. Com isso, fica muito prático criar novas classes e já utilizar, bastando apenas extender estas classes Base, salvo situações específicas como tratamento dos dados ou outros métodos específicos.
 
 
 ### Validações
 
 Cada entidade tem uma classe para validação. Esta classe consegue distinguir validação de atributos e validação de regras de negócio, bem como para qual ação deve ser validada. As validações são executadas apenas quando existem itens de validação no objeto de validação correspondente e são sempre executadas antes de alterar um dado na fonte de dados. As validações que falharam são colocadas em uma lista que pode ser facilmente acessada pela camada de apresentação através de uma Exception específica, a ValidacaoException, que contém como propriedade essa lista de validações inválidas. Com isso, o responsável pela camada de apresentação pode decidir apresentar todas as mensagens ou apenas uma por vez.
 
-### 
+### Desacoplamento da fonte de dados
+
+Como objetivo de evitar o alto acoplamento de uma tecnologia de fonte de dados (EntityFrameowork, NHibernate, etc) foi criada a interface IDatasourceContext. O projeto só reconhece esta interface para acessar a fonte de dados. Logo, o uso dessas tecnologias, idenpendente de qual seja, deve implementar esta interface, para que a aplicação consiga acessar.
+
+
+## Considerações
+
+* Não consegui testar a aplicação minuciosamente
+* Não consegui apresentar muito do que tenho de idéias para implementar uma solução. 
+* Decidi focar na arquitetura e abstração de classes e métodos, bem como a estruturação do projeto em DDD, que eu particularmente gosto bastante e acredito ter conseguido implementar de forma coerente. 
+* Tive dificuldades com o MSSQL Server e EntityFramework, visto que não tenho maestria com a tecnologia.
+* Escolhi o EntityFramework por ser compatível com o MSSQL 2017.
+
+## Pendências
+
+* Nâo utilizei o Swagger
+* Creio que não criei os métodos da API como o esperado em termos de nomenclatura e roteamento, como descrito no requisito.
+
+### Agradeço a oportunidade
+# Levrangeles da Silva Filho
