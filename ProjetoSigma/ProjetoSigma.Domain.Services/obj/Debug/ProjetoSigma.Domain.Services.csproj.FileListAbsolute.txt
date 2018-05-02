@@ -1,0 +1,45 @@
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.xml
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csprojResolveAssemblyReference.cache
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csproj.CoreCompileInputs.cache
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.Services.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\ProjetoSigma.Infra.Data.dll.config
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\bin\Debug\EntityFramework.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Services\obj\Debug\ProjetoSigma.Domain.Services.pdb

@@ -1,0 +1,23 @@
+<div class="content">
+    <h1>Atualizar Marca</h1>
+    <div class="box">
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Id - {{marca.Id}}</label>                
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column is-4">
+                <label class="label">Nome</label>
+                <div class="control">
+                    <input [(ngModel)]="marca.Nome" class="input" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <a (click)="onSalvar()" class="button is-link">Salvar</a>
+            </div>
+        </div>
+    </div>
+</div>

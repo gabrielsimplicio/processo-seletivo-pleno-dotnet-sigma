@@ -1,0 +1,51 @@
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.dll
+C:\Users\Diego\Documents\Visual Studio 2017\Project\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csprojResolveAssemblyReference.cache
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csproj.CoreCompileInputs.cache
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.dll
+C:\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.Test.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Domain.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\bin\Debug\ProjetoSigma.Infra.CrossCutting.pdb
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csprojResolveAssemblyReference.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.dll
+C:\Users\Diego\Pictures\ProjetoSigma\ProjetoSigma\ProjetoSigma.Domain.Test\obj\Debug\ProjetoSigma.Domain.Test.pdb

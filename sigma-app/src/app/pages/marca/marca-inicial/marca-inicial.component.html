@@ -1,0 +1,38 @@
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-parent">
+    <div class="tile is-child box">
+      <p class="title">Marca</p>
+      <br/>
+
+      <div class="columns">
+        <div class="column">
+          <a routerLink="/adcionar-marca" class="button is-link">Novo</a>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="column">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+            <thead>
+              <tr>
+                <th style="width: 10%">Código</th>
+                <th>Nome</th>
+                <th style="width: 15%;">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of List">
+                <td>{{ item.Id }}</td>
+                <td>{{ item.Nome }}</td>
+                <td class="has-text-centered">
+                  <a [routerLink]="['/atualizar-marca', item.Id]" class="button is-small is-info">Editar</a>
+                  <a class="button is-small is-danger">Deletar</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
