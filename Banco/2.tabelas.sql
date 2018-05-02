@@ -31,6 +31,7 @@ CREATE TABLE meupatrimonio.PATRIMONIO(
 	Id int NOT NULL IDENTITY(1,1),
 	MarcaId int NOT NULL,
 	ModeloId int NOT NULL,
+	Nome varchar(30) NOT NULL,
 	Descricao varchar(30),
 	Tombo int NOT NULL DEFAULT NEXT VALUE FOR SEQ_PATRIMONIO_TOMBO
 	

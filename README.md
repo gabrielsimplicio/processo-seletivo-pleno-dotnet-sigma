@@ -1,21 +1,6 @@
-# Sistema "Meu Patrimônio"
+## Sistema "Meu Patrimônio"
 
-Gerenciamento de patromônio
-
-
-
-
-
-
-
-
-
-
-
-
-## O desafio
-
-Crie uma Web API REST para o gerenciamento de patrimônios de uma empresa
+Sistema para gerenciar patrimônios de uma organização.
 
 ## Requisitos
 
@@ -70,37 +55,17 @@ Crie uma Web API REST para o gerenciamento de patrimônios de uma empresa
 
 * Regras:
     * Não deve permitir a existência de dois modelos com o mesmo nome para uma marca.
+	
+## Projeto
 
-### Requisitos técnicos
+### Banco de dados
 
-* Deve-se usar o C#
-* Os dados devem ser salvos no SQL Server
-* Deve-se usar o ASP.NET Web Api ou o ASP.NET Core Web Api
-* Deve-se usar o Swagger
-* Os endpoints devem utilizar o formato JSON
-* A sua aplicação deve conter um arquivo README explicando o funcionamento e a solução adotada na sua implementação do desafio
+* Foi criado um banco, schema, login e usuário de nome 'meupatrimonio'
 
-### Observações/Dicas
+* Foram criadas as tabelas: 
+	* MARCA(Id, Nome)
+	* MODELO(Id, MarcaId, Nome) 
+	* PATRIMONIO(Id, MarcaId, ModeloId, Nome, Descricao, Tombo)
+	
+* Foi criada a sequencia 'SEQ_PATRIMONIO_TOMBO' para atribuir automaticamente o número do tombo no patrimonio
 
-* Não limite-se às funcionalidades acima. Qualquer outra feature extra é bem-vinda.
-* A arquitetura é por sua conta.
-* Coloque um script de criação do banco de dados junto ao projeto.
-* Não é necessária a criação de telas.
-
-## Critérios de avaliação
-
-* Organização do código
-* Organização da estrutura
-* Arquitetura desenvolvida
-* Documentação do projeto (readme)
-
-## Procedimento
-
-* Faça um fork do projeto https://github.com/gabrielsimplicio/processo-seletivo-pleno-dotnet-sigma
-* Ao finalizar a sua aplicação, crie um pull request no projeto de origem.
-
-## Prazo
-* O prazo para criar pull requests é até o dia 02/05/2018, às 12h.
-
-### Dê o seu melhor!
-### Boa prova! ;)
