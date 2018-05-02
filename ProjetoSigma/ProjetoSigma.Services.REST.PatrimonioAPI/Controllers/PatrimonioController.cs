@@ -59,9 +59,10 @@ namespace ProjetoSigma.Services.REST.PatrimonioAPI.Controllers
         }
 
         [HttpDelete]
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
             _patrimonioApplication.Delete(id);
+            return Ok("Deletado!");
         }
     }
 }

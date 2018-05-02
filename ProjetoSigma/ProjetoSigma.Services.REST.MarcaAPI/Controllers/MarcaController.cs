@@ -43,9 +43,10 @@ namespace ProjetoSigma.Services.REST.MarcaAPI.Controllers
         }
 
         [HttpDelete]
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
             _marcaApplication.Delete(id);
+            return Ok("Deletado!");
         }
     }
 }

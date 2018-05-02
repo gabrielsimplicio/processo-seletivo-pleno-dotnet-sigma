@@ -43,9 +43,10 @@ namespace ProjetoSigma.Services.REST.ModeloAPI.Controllers
         }
 
         [HttpDelete]
-        public void Delete(int id)
+        public IHttpActionResult Delete(int id)
         {
             _modeloApplication.Delete(id);
+            return Ok("Deletado!");
         }
     }
 }
