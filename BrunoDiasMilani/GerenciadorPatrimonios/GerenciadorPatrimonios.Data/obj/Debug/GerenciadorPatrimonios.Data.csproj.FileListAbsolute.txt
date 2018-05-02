@@ -1,0 +1,14 @@
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\GerenciadorPatrimonios.Data.dll.config
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\GerenciadorPatrimonios.Data.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\GerenciadorPatrimonios.Data.pdb
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\EntityFramework.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\GerenciadorPatrimonios.Domain.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\GerenciadorPatrimonios.Domain.pdb
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\EntityFramework.xml
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\obj\Debug\GerenciadorPatrimonios.Data.csprojResolveAssemblyReference.cache
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\obj\Debug\GerenciadorPatrimonios.Data.csproj.CoreCompileInputs.cache
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\obj\Debug\GerenciadorPatrimonios.Data.csproj.CopyComplete
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\obj\Debug\GerenciadorPatrimonios.Data.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Data\obj\Debug\GerenciadorPatrimonios.Data.pdb

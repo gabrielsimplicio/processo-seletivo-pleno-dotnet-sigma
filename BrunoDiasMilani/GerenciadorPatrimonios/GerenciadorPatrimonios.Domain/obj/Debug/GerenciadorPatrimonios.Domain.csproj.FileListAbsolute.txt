@@ -1,0 +1,5 @@
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Domain\bin\Debug\GerenciadorPatrimonios.Domain.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Domain\bin\Debug\GerenciadorPatrimonios.Domain.pdb
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Domain\obj\Debug\GerenciadorPatrimonios.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Domain\obj\Debug\GerenciadorPatrimonios.Domain.dll
+C:\Projetos\C-Sharp\Processo Seletivo\GerenciadorPatrimonios\GerenciadorPatrimonios.Domain\obj\Debug\GerenciadorPatrimonios.Domain.pdb
