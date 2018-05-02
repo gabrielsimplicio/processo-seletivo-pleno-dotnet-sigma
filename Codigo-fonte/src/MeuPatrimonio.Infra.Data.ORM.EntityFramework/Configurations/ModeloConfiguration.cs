@@ -17,7 +17,7 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Configurations
 
             HasRequired(modelo => modelo.Marca)
                 .WithMany(marca => marca.Modelos)
-                .HasForeignKey(marca => marca.MarcaId);
+                .HasForeignKey(modelo => modelo.MarcaId);
         }
     }
 }

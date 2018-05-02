@@ -43,6 +43,7 @@
     <Compile Include="EntityBase.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Modelo.cs" />
+    <Compile Include="Patrimonio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -23,7 +23,7 @@ namespace MeuPatrimonio.Application.Tests
             var validation = new MarcaValidation(repository);
             var service = new MarcaService(validation, repository);
             var application = new MarcaApplication(service);
-            var lista = application.GetAll();
+            var lista = application.GetAll(null);
 
             Assert.IsNotNull(lista);
         }
@@ -60,7 +60,7 @@ namespace MeuPatrimonio.Application.Tests
                 var validation = new MarcaValidation(repository);
                 var service = new MarcaService(validation, repository);
                 var application = new MarcaApplication(service);
-                var marca = application.GetAll(m => m.Nome == "CCE").FirstOrDefault();
+                var marca = application.GetAll(new MarcaDTO { Nome = "CCE" }).FirstOrDefault();
                 application.Add(new MarcaDTO { Nome = marca.Nome });
             }
             catch (ValidacaoException exc)
@@ -80,7 +80,7 @@ namespace MeuPatrimonio.Application.Tests
                 var validation = new MarcaValidation(repository);
                 var service = new MarcaService(validation, repository);
                 var application = new MarcaApplication(service);
-                var marca = application.GetAll(m => m.Nome == "CCE").FirstOrDefault();
+                var marca = application.GetAll(new MarcaDTO { Nome = "CCE" }).FirstOrDefault();
                 application.Update(new MarcaDTO { Nome = marca.Nome });
             }
             catch (ValidacaoException exc)

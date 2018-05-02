@@ -2,6 +2,7 @@
 using MeuPatrimonio.Infra.Data.Interfaces;
 using MeuPatrimonio.Infra.Data.ORM.EntityFramework.Configurations;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
@@ -46,9 +47,14 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts
             return Set<TEntity>().FirstOrDefault(filter);
         }
 
+        public IEnumerable<TEntity> GetAll<TEntity>() where TEntity : class
+        {
+            return Set<TEntity>().AsEnumerable();
+        }
+
         public IQueryable<TEntity> Query<TEntity>() where TEntity : class
         {
-            return Set<TEntity>().AsQueryable();
+            return Set<TEntity>();
         }
 
         public void Remove<TEntity>(TEntity entity) where TEntity : class

@@ -53,6 +53,11 @@ namespace MeuPatrimonio.Presentation.WebAPI
             container.RegisterType<IModeloRepository, ModeloRepository>(new HierarchicalLifetimeManager());
             container.RegisterType<IModeloValidation, ModeloValidation>(new HierarchicalLifetimeManager());
 
+            container.RegisterType<IPatrimonioApplication, PatrimonioApplication>(new HierarchicalLifetimeManager());
+            container.RegisterType<IPatrimonioService, PatrimonioService>(new HierarchicalLifetimeManager());
+            container.RegisterType<IPatrimonioRepository, PatrimonioRepository>(new HierarchicalLifetimeManager());
+            container.RegisterType<IPatrimonioValidation, PatrimonioValidation>(new HierarchicalLifetimeManager());
+
             config.DependencyResolver = new UnityDependencyResolver(container);
         }
     }

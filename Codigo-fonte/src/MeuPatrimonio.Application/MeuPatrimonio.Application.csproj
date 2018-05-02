@@ -48,8 +48,10 @@
     <Compile Include="Interfaces\IApplicationBase.cs" />
     <Compile Include="Interfaces\IMarcaApplication.cs" />
     <Compile Include="Interfaces\IModeloApplication.cs" />
+    <Compile Include="Interfaces\IPatrimonioApplication.cs" />
     <Compile Include="MarcaApplication.cs" />
     <Compile Include="ModeloApplication.cs" />
+    <Compile Include="PatrimonioApplication.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

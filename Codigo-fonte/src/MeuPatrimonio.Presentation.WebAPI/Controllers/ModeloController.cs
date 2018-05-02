@@ -91,7 +91,24 @@ namespace MeuPatrimonio.Presentation.WebAPI.Controllers
         {
             try
             {
-                return Ok(Application.GetAll());
+                return Ok(Application.GetAll(null));
+            }
+            catch (ValidacaoException exc)
+            {
+                return BadRequest(exc.InvalidMessages[0].Texto);
+            }
+            catch (Exception exc)
+            {
+                return BadRequest(exc.Message);
+            }
+        }
+
+        [HttpGet]
+        public IHttpActionResult ListarPorMarcaId(int marcaId)
+        {
+            try
+            {
+                return Ok(Application.GetAll(new ModeloDTO { MarcaId = marcaId }));
             }
             catch (ValidacaoException exc)
             {

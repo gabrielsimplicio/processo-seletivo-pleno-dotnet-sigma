@@ -22,9 +22,9 @@ namespace MeuPatrimonio.Application
             return Mapper.Map<TEntityDTO>(Service.Add(Mapper.Map<TEntity>(entityDTO)));
         }
 
-        public IList<TEntityDTO> GetAll(Expression<Func<TEntityDTO, bool>> filter = null)
+        public IList<TEntityDTO> GetAll(TEntityDTO filter)
         {
-            var lista = Service.GetAll(Mapper.Map<Expression<Func<TEntity, bool>>>(filter));
+            var lista = Service.GetAll(CreateQueryExpression(filter));
 
             if (lista != null && lista.Count() > 0)
             {
@@ -32,6 +32,11 @@ namespace MeuPatrimonio.Application
             }
 
             return null;
+        }
+
+        public virtual Expression<Func<TEntity, bool>> CreateQueryExpression(TEntityDTO filter)
+        {
+            throw new NotImplementedException();
         }
 
         public TEntityDTO GetById(int id)

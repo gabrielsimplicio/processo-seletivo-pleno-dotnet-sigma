@@ -16,7 +16,7 @@ namespace MeuPatrimonio.Infra.Data.Repositories
             Context = context;
         }
 
-        public TEntity Add(TEntity entity)
+        public virtual TEntity Add(TEntity entity)
         {
             return Context.Add(entity);
         }
@@ -51,7 +51,7 @@ namespace MeuPatrimonio.Infra.Data.Repositories
             Context.Remove(GetById(id));
         }
 
-        public TEntity Update(TEntity entity)
+        public virtual TEntity Update(TEntity entity)
         {
             return Context.Update(entity);
         }

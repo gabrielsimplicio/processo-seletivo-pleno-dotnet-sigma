@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IMarcaRepository.cs" />
     <Compile Include="Interfaces\IModeloRepository.cs" />
+    <Compile Include="Interfaces\IPatrimonioRepository.cs" />
     <Compile Include="Interfaces\IRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

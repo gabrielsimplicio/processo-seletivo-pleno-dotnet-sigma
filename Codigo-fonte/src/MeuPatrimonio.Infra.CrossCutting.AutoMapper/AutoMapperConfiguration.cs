@@ -32,6 +32,17 @@ namespace MeuPatrimonio.Infra.CrossCutting.AutoMapper
                 mapper.CreateMap<IList<Modelo>, IList<ModeloDTO>>();
                 mapper.CreateMap<Expression<Func<Modelo, bool>>, Expression<Func<ModeloDTO, bool>>>();
                 #endregion
+
+                #region Patrimonio
+                mapper.CreateMap<PatrimonioDTO, Patrimonio>()
+                    .ForMember(m => m.Tombo, option => option.Ignore());
+                mapper.CreateMap<Expression<Func<PatrimonioDTO, bool>>, Expression<Func<Patrimonio, bool>>>();
+
+
+                mapper.CreateMap<Patrimonio, PatrimonioDTO>();
+                mapper.CreateMap<IList<Patrimonio>, IList<PatrimonioDTO>>();
+                mapper.CreateMap<Expression<Func<Patrimonio, bool>>, Expression<Func<PatrimonioDTO, bool>>>();
+                #endregion
             });
         }
     }

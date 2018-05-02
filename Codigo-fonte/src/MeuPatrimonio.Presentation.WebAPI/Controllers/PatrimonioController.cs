@@ -8,21 +8,21 @@ using System.Web.Http.Results;
 
 namespace MeuPatrimonio.Presentation.WebAPI.Controllers
 {
-    public class MarcaController : ApiController
+    public class PatrimonioController : ApiController
     {
-        private readonly IMarcaApplication Application;
+        private readonly IPatrimonioApplication Application;
 
-        public MarcaController(IMarcaApplication application)
+        public PatrimonioController(IPatrimonioApplication application)
         {
             Application = application;
         }
 
         [HttpPost]
-        public IHttpActionResult Cadastrar(MarcaDTO marca)
+        public IHttpActionResult Cadastrar(PatrimonioDTO Patrimonio)
         {
             try
             {
-                return Ok(Application.Add(marca));
+                return Ok(Application.Add(Patrimonio));
             }
             catch (ValidacaoException exc)
             {
@@ -35,11 +35,11 @@ namespace MeuPatrimonio.Presentation.WebAPI.Controllers
         }
 
         [HttpPut]
-        public IHttpActionResult Editar(MarcaDTO marca)
+        public IHttpActionResult Editar(PatrimonioDTO Patrimonio)
         {
             try
             {
-                return Ok(Application.Update(marca));
+                return Ok(Application.Update(Patrimonio));
             }
             catch (ValidacaoException exc)
             {
@@ -92,6 +92,40 @@ namespace MeuPatrimonio.Presentation.WebAPI.Controllers
             try
             {
                 return Ok(Application.GetAll(null));
+            }
+            catch (ValidacaoException exc)
+            {
+                return BadRequest(exc.InvalidMessages[0].Texto);
+            }
+            catch (Exception exc)
+            {
+                return BadRequest(exc.Message);
+            }
+        }
+
+        [HttpGet]
+        public IHttpActionResult ListarPorMarcaId(int marcaId)
+        {
+            try
+            {
+                return Ok(Application.GetAll(new PatrimonioDTO { MarcaId = marcaId }));
+            }
+            catch (ValidacaoException exc)
+            {
+                return BadRequest(exc.InvalidMessages[0].Texto);
+            }
+            catch (Exception exc)
+            {
+                return BadRequest(exc.Message);
+            }
+        }
+
+        [HttpGet]
+        public IHttpActionResult ListarPorModeloId(int modeloId)
+        {
+            try
+            {
+                return Ok(Application.GetAll( new PatrimonioDTO { ModeloId = modeloId }));
             }
             catch (ValidacaoException exc)
             {

@@ -42,9 +42,11 @@
   <ItemGroup>
     <Compile Include="Interfaces\IMarcaService.cs" />
     <Compile Include="Interfaces\IModeloService.cs" />
+    <Compile Include="Interfaces\IPatrimonioService.cs" />
     <Compile Include="Interfaces\IServiceBase.cs" />
     <Compile Include="MarcaService.cs" />
     <Compile Include="ModeloService.cs" />
+    <Compile Include="PatrimonioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceBase.cs" />
   </ItemGroup>
