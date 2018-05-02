@@ -38,6 +38,7 @@ namespace MeuPatrimonio.Domain.Services
 
         public TEntity GetById(int id)
         {
+            var result = Repository.GetById(id);
             return Repository.GetById(id);
         }
 

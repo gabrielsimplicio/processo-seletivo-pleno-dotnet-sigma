@@ -15,12 +15,6 @@ namespace MeuPatrimonio.Presentation.WebAPI.Controllers
         }
 
         [HttpGet]
-        public string Buscar()
-        {
-            return "123123";
-        }
-
-        [HttpGet]
         public JsonResult<MarcaDTO> GetById(int id)
         {
             return Json(Application.GetById(id));

@@ -63,5 +63,10 @@ namespace MeuPatrimonio.Infra.Data.ORM.EntityFramework.Contexts
             SaveChanges();
             return entity;
         }
+
+        public TEntity GetById<TEntity>(int id) where TEntity : class
+        {
+            return Set<TEntity>().Find(id);
+        }
     }
 }

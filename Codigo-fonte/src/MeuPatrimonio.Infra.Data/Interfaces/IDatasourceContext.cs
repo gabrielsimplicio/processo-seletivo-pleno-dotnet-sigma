@@ -10,5 +10,6 @@ namespace MeuPatrimonio.Infra.Data.Interfaces
         TEntity Update<TEntity>(TEntity entity) where TEntity : class;
         TEntity Find<TEntity>(Func<TEntity, bool> filter = null) where TEntity : class;
         IQueryable<TEntity> Query<TEntity>() where TEntity : class;
+        TEntity GetById<TEntity>(int id) where TEntity : class;
     }
 }

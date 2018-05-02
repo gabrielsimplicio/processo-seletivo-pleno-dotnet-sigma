@@ -38,7 +38,7 @@ namespace MeuPatrimonio.Infra.Data.Repositories
 
         public TEntity GetById(int id)
         {
-            return Context.Find<TEntity>(c => c.GetType().GetProperty("Id").GetValue(c) == (id as object));
+            return Context.GetById<TEntity>(id);
         }
 
         public void Remove(TEntity entity)
