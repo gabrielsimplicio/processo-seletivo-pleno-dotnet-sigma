@@ -1,10 +1,6 @@
-# Processo Seletivo Pleno DotNet da Sigma/TJMT
+## Sistema "Meu Patrimônio"
 
-Bem-vindo ao processo seletivo para desenvolvedor pleno dotnet da Sigma/TJMT!
-
-## O desafio
-
-Crie uma Web API REST para o gerenciamento de patrimônios de uma empresa
+Sistema para gerenciar patrimônios de uma organização.
 
 ## Requisitos
 
@@ -59,37 +55,69 @@ Crie uma Web API REST para o gerenciamento de patrimônios de uma empresa
 
 * Regras:
     * Não deve permitir a existência de dois modelos com o mesmo nome para uma marca.
+	
+## Projeto
 
-### Requisitos técnicos
+### Banco de dados
 
-* Deve-se usar o C#
-* Os dados devem ser salvos no SQL Server
-* Deve-se usar o ASP.NET Web Api ou o ASP.NET Core Web Api
-* Deve-se usar o Swagger
-* Os endpoints devem utilizar o formato JSON
-* A sua aplicação deve conter um arquivo README explicando o funcionamento e a solução adotada na sua implementação do desafio
+* Foi criado um banco, schema, login e usuário de nome 'meupatrimonio'
 
-### Observações/Dicas
+* Foram criadas as tabelas: 
+	* MARCA(Id, Nome)
+	* MODELO(Id, MarcaId, Nome) 
+	* PATRIMONIO(Id, MarcaId, ModeloId, Nome, Descricao, Tombo)
+	
+* Foi criada a sequência 'SEQ_PATRIMONIO_TOMBO' para atribuir automaticamente o número do tombo no patrimonio
 
-* Não limite-se às funcionalidades acima. Qualquer outra feature extra é bem-vinda.
-* A arquitetura é por sua conta.
-* Coloque um script de criação do banco de dados junto ao projeto.
-* Não é necessária a criação de telas.
+## Ferramentas e técnicas adotadas
 
-## Critérios de avaliação
+* Microsoft SQL Server Express 2017
+* Microsoft Visual Studio Community 2017 
+* .NET Framework 4.6.1
+* Linguagem de programação C#
+* Arquitetura do projeto em Domain Driven Design (DDD)
+* Service API REST em APS.NET Web API 2 
+* Injeção de dependência usando Unity
+* Conversão de classes DTO para classes de domínio usando AutoMapper
+* Mapeamento de objeto relacional (ORM) usando Entity Framework 6
+* Alguns testes unitários usando Microsoft Unit Testing
 
-* Organização do código
-* Organização da estrutura
-* Arquitetura desenvolvida
-* Documentação do projeto (readme)
+## Solução
 
-## Procedimento
+### O início
 
-* Faça um fork do projeto https://github.com/gabrielsimplicio/processo-seletivo-pleno-dotnet-sigma
-* Ao finalizar a sua aplicação, crie um pull request no projeto de origem.
+O projeto teve a intenção de ser desenvolvido sobre uma estrutura escalável, flexível, adaptável e de alta produtividade. 
+Considerando estas premissas, a solução foi criar o projeto utilizando a arquitetura DDD, implementando classes básicas e autiliares, 
+abstraídas para prover o melhor desempenho possível ao criar novas classes ou fazer manutenções no código.
 
-## Prazo
-* O prazo para criar pull requests é até o dia 02/05/2018, às 12h.
+O projeto começou com a criação do modelo relacional no banco de dados. Para solucionar o problema da numeração automática do tomo
+do patrimônio, foi criada uma sequencia, ligada diretamente com a coluna 'Tomo' da tabela 'Patrimonio'.
 
-### Dê o seu melhor!
-### Boa prova! ;)
+Em seguida, foi elaborada a estrutura do DDD. Cada classe básica (Base) contém métodos para resolver ações básicas como Cadastrar, Editar, Excluir, Buscar por Id, Listar e Listar com Filtros. Com isso, fica muito prático criar novas classes e já utilizar, bastando apenas extender estas classes Base, salvo situações específicas como tratamento dos dados ou outros métodos específicos.
+
+
+### Validações
+
+Cada entidade tem uma classe para validação. Esta classe consegue distinguir validação de atributos e validação de regras de negócio, bem como para qual ação deve ser validada. As validações são executadas apenas quando existem itens de validação no objeto de validação correspondente e são sempre executadas antes de alterar um dado na fonte de dados. As validações que falharam são colocadas em uma lista que pode ser facilmente acessada pela camada de apresentação através de uma Exception específica, a ValidacaoException, que contém como propriedade essa lista de validações inválidas. Com isso, o responsável pela camada de apresentação pode decidir apresentar todas as mensagens ou apenas uma por vez.
+
+### Desacoplamento da fonte de dados
+
+Como objetivo de evitar o alto acoplamento de uma tecnologia de fonte de dados (EntityFramework, NHibernate, etc) foi criada a interface IDatasourceContext. O projeto só reconhece esta interface para acessar a fonte de dados. Logo, o uso dessas tecnologias, idenpendente de qual seja, deve implementar esta interface, para que a aplicação consiga acessar.
+
+
+## Considerações
+
+* Não consegui testar a aplicação minuciosamente
+* Não consegui apresentar muito do que tenho de idéias para implementar uma solução. 
+* Decidi focar na arquitetura e abstração de classes e métodos, bem como a estruturação do projeto em DDD, que eu particularmente gosto bastante e acredito ter conseguido implementar de forma coerente. 
+* Tive dificuldades com o MSSQL Server e EntityFramework, visto que não tenho maestria com a tecnologia.
+* Escolhi o EntityFramework por ser compatível com o MSSQL 2017.
+
+## Pendências
+
+* Nâo utilizei o Swagger
+* Creio que não criei os métodos da API como o esperado em termos de nomenclatura e roteamento, como descrito no requisito.
+
+
+### Agradeço a oportunidade
+# Levrangeles da Silva Filho
