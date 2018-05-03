@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDePatrimonios.AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDePatrimonios.Domain", "GerenciadorDePatrimonios.Domain\GerenciadorDePatrimonios.Domain.csproj", "{AFF9FFA0-D3AD-42DE-B654-1C554A950286}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDePatrimonios.Infra.Data", "GerenciadorDePatrimonios.Infra.Data\GerenciadorDePatrimonios.Infra.Data.csproj", "{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{AFF9FFA0-D3AD-42DE-B654-1C554A950286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFF9FFA0-D3AD-42DE-B654-1C554A950286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFF9FFA0-D3AD-42DE-B654-1C554A950286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{3176562F-0966-4D7A-A337-24E8A64949CF} = {0FAA72C4-0635-43C4-9AE1-05E03931E526}
 		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E} = {7CEF0E18-8033-422D-B226-D198929A764B}
 		{AFF9FFA0-D3AD-42DE-B654-1C554A950286} = {E35975AF-9318-452A-B80E-C2A116BA1C18}
+		{2144D77E-E6E5-43D4-A29B-4EE9F7C04AC7} = {BFA11DEE-5E55-4416-A33C-C6627E67CBFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED985E0E-6367-4435-B391-60EAB4BD39EE}
