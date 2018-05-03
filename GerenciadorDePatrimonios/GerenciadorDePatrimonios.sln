@@ -17,13 +17,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{3176562F-0966-4D7A-A337-24E8A64949CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDePatrimonios.API", "GerenciadorDePatrimonios.API\GerenciadorDePatrimonios.API.csproj", "{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{BFA11DEE-5E55-4416-A33C-C6627E67CBFE} = {0FAA72C4-0635-43C4-9AE1-05E03931E526}
 		{3176562F-0966-4D7A-A337-24E8A64949CF} = {0FAA72C4-0635-43C4-9AE1-05E03931E526}
+		{6F3DB9D5-1B3D-43C5-BCF7-864E6CE0A82E} = {7CEF0E18-8033-422D-B226-D198929A764B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ED985E0E-6367-4435-B391-60EAB4BD39EE}
