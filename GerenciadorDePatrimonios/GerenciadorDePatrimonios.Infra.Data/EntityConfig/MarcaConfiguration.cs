@@ -1,5 +1,4 @@
 ﻿using GerenciadorDePatrimonios.Domain.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity.ModelConfiguration;
 
 namespace GerenciadorDePatrimonios.Infra.Data.EntityConfig
@@ -13,7 +12,6 @@ namespace GerenciadorDePatrimonios.Infra.Data.EntityConfig
             Property(m => m.Nome)
                 .IsRequired()
                 .HasMaxLength(150);
-
         }
     }
 }
