@@ -3,9 +3,13 @@ using GerenciadorDePatrimonios.API.Models;
 using GerenciadorDePatrimonios.Application.Interface;
 using GerenciadorDePatrimonios.Domain.Entities;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Reflection;
 using System.Web.Http;
 using System.Web.Http.Description;
 
@@ -112,19 +116,30 @@ namespace GerenciadorDePatrimonios.API.Controllers
                     }
 
                     var marca = _patrimonioApp.BuscarPorMarcaId(patrimonio.MarcaId);
+                    Type type = marca.GetType();
+                    PropertyInfo[] properties = type.GetProperties().Where(x => x.GetCustomAttributes<NotMappedAttribute>(true).Count() == 0).ToArray();
+                    PropertyInfo[] propertiesList = type.GetProperties().Where(x => typeof(IList).IsAssignableFrom(x.PropertyType) && !typeof(byte[]).IsAssignableFrom(x.PropertyType)).ToArray();
 
 
-                    //if (marca ==true)
-                    //{
-                    //    return Request.CreateResponse(HttpStatusCode.NotFound, "Marca não existe");
-                    //}
+                    int marca_existe = propertiesList.Count();
 
-                    //var modelo = _patrimonioApp.BuscarPorModelo(patrimonio.ModeloId);
+                    if (marca_existe == 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.NotFound, "Marca não existe");
+                    }
 
-                    //if (modelo == null)
-                    //{
-                    //    return Request.CreateResponse(HttpStatusCode.NotFound, "Modelo não existe");
-                    //}
+
+                    var modelo = _patrimonioApp.BuscarPorModelo(patrimonio.ModeloId);
+                    type = modelo.GetType();
+                    properties = type.GetProperties().Where(x => x.GetCustomAttributes<NotMappedAttribute>(true).Count() == 0).ToArray();
+                    propertiesList = type.GetProperties().Where(x => typeof(IList).IsAssignableFrom(x.PropertyType) && !typeof(byte[]).IsAssignableFrom(x.PropertyType)).ToArray();
+
+                    var modelo_existe = propertiesList.Count();
+
+                    if (modelo_existe == 0)
+                    {
+                        return Request.CreateResponse(HttpStatusCode.NotFound, "Modelo não existe");
+                    }
 
                     var msg = "";
                     var resultado = Mapper.Map<PatrimonioModel, Patrimonio>(patrimonio);

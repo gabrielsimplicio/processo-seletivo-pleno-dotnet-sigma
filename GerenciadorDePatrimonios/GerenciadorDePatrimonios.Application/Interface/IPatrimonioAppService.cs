@@ -8,5 +8,6 @@ namespace GerenciadorDePatrimonios.Application.Interface
         IEnumerable<Patrimonio> BuscarPorId(int id);
         IEnumerable<Patrimonio> BuscarPorMarcaId(int id);
         IEnumerable<Patrimonio> BuscarPorModelo(int modeloId);
+
     }
 }
