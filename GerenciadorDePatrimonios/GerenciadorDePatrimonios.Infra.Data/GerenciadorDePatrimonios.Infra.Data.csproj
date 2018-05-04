@@ -53,6 +53,9 @@
     <Compile Include="EntityConfig\PatrimonioConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\MarcaRepository.cs" />
+    <Compile Include="Repositories\ModeloRepository.cs" />
+    <Compile Include="Repositories\RepositoryBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GerenciadorDePatrimonios.Domain\GerenciadorDePatrimonios.Domain.csproj">
@@ -60,9 +63,7 @@
       <Name>GerenciadorDePatrimonios.Domain</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

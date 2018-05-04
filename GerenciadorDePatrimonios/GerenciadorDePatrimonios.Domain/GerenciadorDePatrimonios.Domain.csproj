@@ -33,11 +33,16 @@
     <Compile Include="Entities\Marca.cs" />
     <Compile Include="Entities\Modelo.cs" />
     <Compile Include="Entities\Patrimonio.cs" />
+    <Compile Include="Interfaces\Repositories\IMarcaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IModeloRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
+    <Compile Include="Interfaces\Services\IMarcaService.cs" />
+    <Compile Include="Interfaces\Services\IModeloService.cs" />
+    <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
+    <Compile Include="Services\ModeloService.cs" />
+    <Compile Include="Services\MarcaService.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

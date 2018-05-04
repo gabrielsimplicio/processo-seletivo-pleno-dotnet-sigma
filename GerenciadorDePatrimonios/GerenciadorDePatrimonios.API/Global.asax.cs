@@ -1,4 +1,7 @@
-﻿using System;
+﻿using AutoMapper;
+using GerenciadorDePatrimonios.API.Models;
+using GerenciadorDePatrimonios.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,8 +19,12 @@ namespace GerenciadorDePatrimonios.API
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            Mapper.Initialize(cfg =>
+            {
+                cfg.CreateMap<Marca, MarcaModel>();
+                cfg.CreateMap<Modelo, ModeloModel>();
+            });
         }
     }
 }
