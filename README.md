@@ -1,95 +1,146 @@
-# Processo Seletivo Pleno DotNet da Sigma/TJMT
+## Gerenciador de Patrimonios
 
-Bem-vindo ao processo seletivo para desenvolvedor pleno dotnet da Sigma/TJMT!
-
-## O desafio
-
-Crie uma Web API REST para o gerenciamento de patrimônios de uma empresa
-
-## Requisitos
-
-### Patrimônio
-
-* Campos:
-    * Nome - obrigatório
-    * MarcaId - obrigatório
-    * ModeloId - obrigatório
-    * Descrição
-    * Nº do tombo
-
-* Endpoints:
-    * GET patrimonios - Obter todos os patrimônios
-    * GET patrimonios/{marcaId} - Obter todos os patrimônios de uma determinada marca
-    * GET patrimonios/{modeloId} - Obter todos os patrimônios de um determinado modelo
-    * GET patrimonio/{id} - Obter um patrimônio por ID
-    * POST patrimonio - Inserir um novo patrimônio
-    * PUT patrimonio/{id} - Alterar os dados de um patrimônio
-    * DELETE patrimonio/{id} - Excluir um patrimônio
-
-* Regras:
-    * O nº do tombo deve ser gerado automaticamente pelo sistema, e não pode ser alterado pelos usuários.
 
 ### Marca
 
-* Campos:
-    * Nome - obrigatório
+##### Atributos:
 
-* Endpoints:
-    * GET marcas - Obter todas as marcas
-    * GET marca/{id} - Obter uma marca por ID
-    * POST marca - Inserir uma nova marca
-    * PUT marca/{id} - Alterar os dados de uma marca
-    * DELETE marca/{id} - Excluir uma marca
+- MarcaId (int)(obrigatorio)
+- Nome (string)(obrigatorio)
 
-* Regras:
-    * Não deve permitir a existência de duas marcas com o mesmo nome.
+ 
+##### Endpoints:
 
+
+- GET marcas - Obter todas as marcas
+ <br> Retorna Todas as marcas cadastradas no banco de dados.
+
+- GET marcas/id - Obter uma marca por ID
+ <br> Retorna marca expecifica cadastrada no banco de dados.
+ 
+- POST marcas - Inserir uma marca
+  <br> Cadastra uma unica marca por vez, não podendo cadastrar o nome de uma marca ja inclusa no banco de dados,
+       caso ocorra o usuario sera informado com a seguinte mensagem "Marca já existe".
+  <br> Caso usuario deixe o nome da marca em branco sera informado com a seguinte mensagem "Nome da marca nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao salvar a marca".</span>
+- PUT marcas/id - Alterar os dados de uma marca
+  <br> Cadastra uma unica marca por vez, não podendo cadastrar o nome de uma marca ja inclusa no banco de dados,
+       caso ocorra o usuario sera informado com a seguinte mensagem "Marca já existe".
+  <br> Caso usuario deixe o nome da marca em branco sera informado com a seguinte mensagem "Nome da marca nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao alterar a marca".</span>
+- DELETE marcas/id - Excluir uma marca
+ <br> Exclui uma marca expecifica cadastradas no banco de dados, sendo obrigatorio informar o atributo MarcaId.
+
+
+---
 ### Modelo
 
-* Campos:
-    * Nome - obrigatório
+##### Atributos:
 
-* Endpoints:
-    * GET modelos - Obter todos os modelos
-    * GET modelos/{marcaId} - Obter todos os modelos de uma determinada marca
-    * GET modelo/{id} - Obter um modelo por ID
-    * POST modelo - Inserir um novo modelo
-    * PUT modelo/{id} - Alterar os dados de um modelo
-    * DELETE modelo/{id} - Excluir um modelo
+- ModeloId (int)(obrigatorio)
+- Nome (string)(obrigatorio)
+- MarcaId (int)(obrigatorio)
+ 
+##### Endpoints:
 
-* Regras:
-    * Não deve permitir a existência de dois modelos com o mesmo nome para uma marca.
+- GET modelos - Obter todas os modelos
+ <br> Retorna Todos os modelos cadastrados no banco de dados.
 
-### Requisitos técnicos
+- GET modelos/id - Obter um modelo por ID
+ <br> Retorna modelo expecifico cadastrado no banco de dados.
 
-* Deve-se usar o C#
-* Os dados devem ser salvos no SQL Server
-* Deve-se usar o ASP.NET Web Api ou o ASP.NET Core Web Api
-* Deve-se usar o Swagger
-* Os endpoints devem utilizar o formato JSON
-* A sua aplicação deve conter um arquivo README explicando o funcionamento e a solução adotada na sua implementação do desafio
+- GET marcas/marcaId/modelos - Obter todos os modelos por Marca
+ <br> Retorna modelos por marca cadastrado no banco de dados.
+ 
+- POST modelos - Inserir um modelo
+  <br> Cadastra um unico modelo por vez, não podendo cadastrar o nome de um modelo mais de uma vez para a mesma marca ja inclusa no banco de dados,
+       caso ocorra o usuario sera informado com a seguinte mensagem "Modelo já existe".
+  <br> Caso usuario deixe o nome do modelo em branco sera informado com a seguinte mensagem "Nome do modelo nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe a MarcaId em branco sera informado com a seguinte mensagem "MarcaId nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao salvar a marca".</span>
 
-### Observações/Dicas
+-  PUT modelos/id - Alterar os dados de um modelo
+  <br> Cadastra um unico modelo por vez, não podendo cadastrar o nome de um modelo mais de uma vez para a mesma marca ja inclusa no banco de dados,
+       caso ocorra o usuario sera informado com a seguinte mensagem "Modelo já existe".
+  <br> Caso usuario deixe o nome do modelo em branco sera informado com a seguinte mensagem "Nome do modelo nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe a MarcaId em branco sera informado com a seguinte mensagem "MarcaId nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao salvar a marca".</span>
 
-* Não limite-se às funcionalidades acima. Qualquer outra feature extra é bem-vinda.
-* A arquitetura é por sua conta.
-* Coloque um script de criação do banco de dados junto ao projeto.
-* Não é necessária a criação de telas.
+- DELETE modelos/id - Excluir um modelo
+ <br> Exclui um modelo expecifico cadastradas no banco de dados, sendo obrigatorio informar o atributo ModeloId.
 
-## Critérios de avaliação
 
-* Organização do código
-* Organização da estrutura
-* Arquitetura desenvolvida
-* Documentação do projeto (readme)
+---
+### Patrimonio
 
-## Procedimento
+##### Atributos:
 
-* Faça um fork do projeto https://github.com/gabrielsimplicio/processo-seletivo-pleno-dotnet-sigma
-* Ao finalizar a sua aplicação, crie um pull request no projeto de origem.
+- PatrimonioId (int)(obrigatorio)
+- Nome (string)(obrigatorio)
+- MarcaId (int)(obrigatorio)
+- ModeloId (int)(obrigatorio)
+- Descricao (string)(opcional)
+- NumeroTombo (Guid)(uniqueidentifier)(obrigatorio)
+ 
+##### Endpoints:
 
-## Prazo
-* O prazo para criar pull requests é até o dia 02/05/2018, às 12h.
+- GET patrimonios - Obter todos os patrimonios
+ <br> Retorna Todos os patrimonios cadastrados no banco de dados.
 
-### Dê o seu melhor!
-### Boa prova! ;)
+- GET patrimonios/id - Obter um patrimonios por ID
+ <br> Retorna patrimonios expecifico cadastrado no banco de dados.
+
+- GET marcas/marcaId/patrimonios - Obter todos as patrimonios por Marca
+ <br> Retorna patrimonios por marca cadastrado no banco de dados.
+
+- GET modelos/modeloId/patrimonios - Obter todos os patrimonios por Modelo
+ <br> Retorna patrimonios por modelo cadastrado no banco de dados.
+ 
+- POST patrimonios - Inserir um patrimonios
+  <br> Cadastra um unico patrimonio por vez.
+  <br> Caso usuario deixe o nome do patrimonio em branco sera informado com a seguinte mensagem "Nome do patrimonio nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe a MarcaId em branco sera informado com a seguinte mensagem "MarcaId nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe o ModeloId em branco sera informado com a seguinte mensagem "ModeloId nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao salvar a marca".</span>
+
+-  PUT patrimonios/id - Alterar os dados de um patrimonios
+  <br> Cadastra um unico patrimonio por vez.
+  <br> Caso usuario deixe o nome do patrimonio em branco sera informado com a seguinte mensagem "Nome do patrimonio nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe a MarcaId em branco sera informado com a seguinte mensagem "MarcaId nao pode ser nulo ou vazio".
+  <br> Caso usuario deixe o ModeloId em branco sera informado com a seguinte mensagem "ModeloId nao pode ser nulo ou vazio".
+  <br> Caso ocorra algum erro sistemico o usuario sera informado com a seguinte mensagem <>"Falha ao salvar a marca".</span>
+
+- DELETE patrimonios/id - Excluir um patrimonios
+ <br> Exclui um patrimonios expecifico cadastradas no banco de dados, sendo obrigatorio informar o atributo PatrimonioId.
+---
+#### Observação: O número do tombo deve ser gerado automaticamente pelo sistema, e não pode ser alterado pelos usuários.
+
+
+
+---
+
+### Tecnologias
+
+
+- Visual Studio 2017 
+- Linguagem C#
+- ASP.NET Web Api 2
+- Entity Framework Migrations
+- DDD (Domain Driven Design)
+- AutoMapper
+- IOC
+- Unity WebApi
+- Documentação com Swagger
+- Endpoints no formato JSON
+- Github
+---
+
+
+## Utilização
+
+- Clone ou baixe o repositório.
+- Execute a aplicação  
+- A pagina inicial do Swagger Gerenciador de Patrimonios ira abrir.
+- Clique em Marcas e logo em seguida execute (GET marcas) para obter todas as marcas, 
+ <br> dessa fora o Entity Framework atraves do  "Database.SetInitializer" ira criar as tabelas,ralações e inserções em 
+ <br> todas as tabelas para melhor experiencia do usuario, sendo assim não sera necessário cadastrar uma Marca e um Modelo para criar um Patrominio.

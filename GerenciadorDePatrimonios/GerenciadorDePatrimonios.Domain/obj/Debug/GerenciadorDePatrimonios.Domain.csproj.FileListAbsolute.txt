@@ -1,0 +1,5 @@
+C:\Users\jamilzazu\Desktop\Projeto\processo-seletivo-pleno-dotnet-sigma\GerenciadorDePatrimonios\GerenciadorDePatrimonios.Domain\bin\Debug\GerenciadorDePatrimonios.Domain.dll
+C:\Users\jamilzazu\Desktop\Projeto\processo-seletivo-pleno-dotnet-sigma\GerenciadorDePatrimonios\GerenciadorDePatrimonios.Domain\bin\Debug\GerenciadorDePatrimonios.Domain.pdb
+C:\Users\jamilzazu\Desktop\Projeto\processo-seletivo-pleno-dotnet-sigma\GerenciadorDePatrimonios\GerenciadorDePatrimonios.Domain\obj\Debug\GerenciadorDePatrimonios.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jamilzazu\Desktop\Projeto\processo-seletivo-pleno-dotnet-sigma\GerenciadorDePatrimonios\GerenciadorDePatrimonios.Domain\obj\Debug\GerenciadorDePatrimonios.Domain.dll
+C:\Users\jamilzazu\Desktop\Projeto\processo-seletivo-pleno-dotnet-sigma\GerenciadorDePatrimonios\GerenciadorDePatrimonios.Domain\obj\Debug\GerenciadorDePatrimonios.Domain.pdb
