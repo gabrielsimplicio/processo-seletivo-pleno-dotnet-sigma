@@ -1,10 +1,10 @@
-using System.Web.Http;
-using WebActivatorEx;
 using GerenciadorDePatrimonios.API;
+using GerenciadorDePatrimonios.API.Models;
 using Swashbuckle.Application;
 using Swashbuckle.Swagger;
 using System;
-using GerenciadorDePatrimonios.API.Models;
+using System.Web.Http;
+using WebActivatorEx;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 

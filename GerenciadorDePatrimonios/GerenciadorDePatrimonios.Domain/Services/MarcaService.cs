@@ -1,6 +1,5 @@
 ﻿
 using GerenciadorDePatrimonios.Domain.Entities;
-using GerenciadorDePatrimonios.Domain.Interfaces.Repositories;
 using GerenciadorDePatrimonios.Domain.Interfaces.Services;
 using GerenciadorDePatrimonios.Domain.Repositories;
 using System.Collections.Generic;

@@ -1,5 +1,4 @@
-﻿using GerenciadorDePatrimonios.Domain.Interfaces.Repositories;
-using GerenciadorDePatrimonios.Domain.Repositories;
+﻿using GerenciadorDePatrimonios.Domain.Repositories;
 using GerenciadorDePatrimonios.Infra.Data.Contexto;
 using System;
 using System.Collections.Generic;

@@ -1,7 +1,6 @@
 ﻿using GerenciadorDePatrimonios.Domain.Entities;
 using System;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GerenciadorDePatrimonios.API.Models
 {
