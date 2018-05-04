@@ -139,12 +139,6 @@
 ## Utilização
 
 - Clone ou baixe o repositório.
-- Dentro do projeto,na pasta "1 - Services"
-- Clique com o botao direito sobre o projeto GerenciadorDePatrimonios.API
-- Va em propriedades
-- Na ana "Web", Selecione o radiobutton "Specific Page"
-- O textbox ira habilitar, nele cole este endereço: swagger/ui/index#
-- Clique em Salvar.
 - Execute a aplicação  
 - A pagina inicial do Swagger Gerenciador de Patrimonios ira abrir.
 - Clique em Marcas e logo em seguida execute (GET marcas) para obter todas as marcas, 
