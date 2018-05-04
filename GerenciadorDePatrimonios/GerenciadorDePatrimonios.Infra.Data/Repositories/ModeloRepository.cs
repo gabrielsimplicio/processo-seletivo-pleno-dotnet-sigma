@@ -11,9 +11,15 @@ namespace GerenciadorDePatrimonios.Infra.Data.Repositories
         {
             return Db.Modelos.Where(m => m.ModeloId == id);
         }
-        public bool Exists<Modelo>(string nome, int marcaId)
+
+        public List<Modelo> BuscarPorMarcaId(int id)
         {
-            return Db.Marcas.Local.Any(m => m.Nome == nome && m.MarcaId == marcaId);
+            return Db.Modelos.Where(m => m.MarcaId == id).ToList();
+        }
+
+        public List<Modelo> BuscarPorNome(string nome, int marcaId)
+        {
+            return Db.Modelos.Where(m => m.Nome == nome && m.MarcaId == marcaId).ToList();
         }
     }
 }

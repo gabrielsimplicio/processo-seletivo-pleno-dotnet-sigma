@@ -6,6 +6,6 @@ namespace GerenciadorDePatrimonios.Domain.Entities
     {
         public int MarcaId { get; set; }
         public string Nome { get; set; }
-        //public virtual IEnumerable<Modelo> Modelos { get; set; }
+        public virtual IEnumerable<Modelo> Modelos { get; set; }
     }
 }

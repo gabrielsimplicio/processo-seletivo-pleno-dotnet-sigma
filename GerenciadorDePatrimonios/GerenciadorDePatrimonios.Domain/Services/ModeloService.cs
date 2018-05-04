@@ -15,9 +15,19 @@ namespace GerenciadorDePatrimonios.Domain.Services
             _modeloRepository = modeloRepository;
         }
 
-        public IEnumerable<Modelo> BuscarPorId(int Id)
+        public IEnumerable<Modelo> BuscarPorId(int id)
         {
-            return _modeloRepository.BuscarPorId(Id);
+            return _modeloRepository.BuscarPorId(id);
+        }
+
+        public List<Modelo> BuscarPorMarcaId(int id)
+        {
+            return _modeloRepository.BuscarPorMarcaId(id);
+        }
+
+        public List<Modelo> BuscarPorNome(string nome, int marcaId)
+        {
+            return _modeloRepository.BuscarPorNome(nome, marcaId);
         }
     }
 }

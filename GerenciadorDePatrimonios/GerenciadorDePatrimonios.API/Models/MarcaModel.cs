@@ -10,6 +10,6 @@ namespace GerenciadorDePatrimonios.API.Models
         public int MarcaId { get; set; }
         public string Nome { get; set; }
         public virtual Modelo Modelo { get; set; }
-        //public virtual IEnumerable<ModeloModel> Modelos { get; set; }
+        public virtual IEnumerable<ModeloModel> Modelos { get; set; }
     }
 }

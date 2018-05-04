@@ -20,5 +20,15 @@ namespace GerenciadorDePatrimonios.Application
         {
             return _modeloService.BuscarPorId(id);
         }
+
+        public List<Modelo> BuscarPorMarcaId(int id)
+        {
+            return _modeloService.BuscarPorMarcaId(id);
+        }
+
+        public List<Modelo> BuscarPorNome(string nome, int marcaId)
+        {
+            return _modeloService.BuscarPorNome(nome, marcaId);
+        }
     }
 }

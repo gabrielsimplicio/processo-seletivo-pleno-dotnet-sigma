@@ -6,6 +6,8 @@ namespace GerenciadorDePatrimonios.Domain.Interfaces.Repositories
 {
     public interface IModeloRepository : IRepositoryBase<Modelo>
     {
-        IEnumerable<Modelo> BuscarPorId(int Id);
+        IEnumerable<Modelo> BuscarPorId(int id);
+        List<Modelo> BuscarPorNome(string nome, int marcaId);
+        List<Modelo> BuscarPorMarcaId(int id);
     }
 }

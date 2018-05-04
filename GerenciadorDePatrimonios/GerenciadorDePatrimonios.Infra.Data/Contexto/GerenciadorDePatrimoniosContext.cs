@@ -25,10 +25,10 @@ namespace GerenciadorDePatrimonios.Infra.Data.Contexto
             // Remove comando delete em cascata muitos para muitos
             modelBuilder.Conventions.Remove<ManyToManyCascadeDeleteConvention>();
 
-            // Propriedades de Classe que possuirem Id no nome, exemplo PatrimonioId, sera considerada como chave primaria
-            modelBuilder.Properties()
-                .Where(p => p.Name == p.ReflectedType.Name + "Id")
-                .Configure(p => p.IsKey());
+            //// Propriedades de Classe que possuirem Id no nome, exemplo PatrimonioId, sera considerada como chave primaria
+            //modelBuilder.Properties()
+            //    .Where(p => p.Name == p.ReflectedType.Name + "Id")
+            //    .Configure(p => p.IsKey());
 
             // Objetos string de Classes serao configurados para varchar
             modelBuilder.Properties<string>()

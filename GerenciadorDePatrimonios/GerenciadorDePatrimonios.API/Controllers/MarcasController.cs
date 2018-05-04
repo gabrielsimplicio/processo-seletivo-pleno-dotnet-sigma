@@ -15,10 +15,12 @@ namespace GerenciadorDePatrimonios.API.Controllers
     public class MarcasController : ApiController
     {
         private readonly IMarcaAppService _marcaApp;
+        private readonly IModeloAppService _modeloApp;
 
-        public MarcasController(IMarcaAppService marcaApp)
+        public MarcasController(IMarcaAppService marcaApp, IModeloAppService modeloApp)
         {
             _marcaApp = marcaApp;
+            _modeloApp = modeloApp;
         }
 
         [Route("marcas")]
@@ -66,13 +68,14 @@ namespace GerenciadorDePatrimonios.API.Controllers
                         return Request.CreateResponse(HttpStatusCode.BadRequest, "Nome da marca nao pode ser nulo ou vazio");
                     }
 
-                    var resultado2 = (Mapper.Map<List<Marca>, List<MarcaModel>>(_marcaApp.BuscarPorNome(marca.Nome)).ToArray());
+                    var resultado_ = (Mapper.Map<List<Marca>, List<MarcaModel>>(_marcaApp.BuscarPorNome(marca.Nome)).ToArray());
                     var msg = "";
 
-                    if (resultado2.Length == 0)
+                    if (resultado_.Length == 0)
                     {
                         var resultado = Mapper.Map<MarcaModel, Marca>(marca);
                         _marcaApp.Add(resultado);
+                        marca.MarcaId = resultado.MarcaId;
                         msg = "Marca inserida com sucesso";
                     }
                     else
@@ -91,7 +94,7 @@ namespace GerenciadorDePatrimonios.API.Controllers
             }
             catch (Exception)
             {
-                return Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao listar marcas");
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao salvar marca");
             }
 
         }
@@ -146,13 +149,31 @@ namespace GerenciadorDePatrimonios.API.Controllers
                     return Request.CreateResponse(HttpStatusCode.BadRequest, "Digite o codigo da marca para excluir");
                 }
 
+
+                var resultado_ = (Mapper.Map<List<Modelo>, List<ModeloModel>>(_modeloApp.BuscarPorMarcaId(marcaId)).ToArray());
+                var msg = "";
+
+
+                if (resultado_.Length > 0)
+                {
+                    msg = "Nao foi possivel excluir a marca, pois ela esta viculada a um modelo";
+                    return Request.CreateResponse(HttpStatusCode.OK, msg);
+                }
+
                 var resultado = _marcaApp.GetById(marcaId);
-                _marcaApp.Remove(resultado);
 
-                var msg = "Marca excluida com sucesso";
+                if (resultado == null)
+                {
+                    msg = "Marca nao encontrada";
+                }
+                else
+                {
+                    _marcaApp.Remove(resultado);
+                    msg = "Marca excluida com sucesso";
+                }
+                
                 var retorno = new { resultado, mensagem = msg };
-
-                return Request.CreateResponse(HttpStatusCode.OK, retorno);
+                return Request.CreateResponse(HttpStatusCode.OK, msg);
             }
             catch (Exception)
             {
