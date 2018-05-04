@@ -40,11 +40,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IPatrimonioAppService.cs" />
     <Compile Include="MarcaAppService.cs" />
     <Compile Include="AppServiceBase.cs" />
     <Compile Include="Interface\IAppServiceBase.cs" />
     <Compile Include="Interface\IModeloAppService.cs" />
     <Compile Include="Interface\IMarcaAppService.cs" />
+    <Compile Include="PatrimonioAppService.cs" />
     <Compile Include="ModeloAppService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

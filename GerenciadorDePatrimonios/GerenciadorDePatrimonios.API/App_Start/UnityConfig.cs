@@ -17,37 +17,21 @@ namespace GerenciadorDePatrimonios.API
         {
             var container = new UnityContainer();
 
-            // register all your components with the container here
-            // it is NOT necessary to register your controllers
-
-            // e.g. container.RegisterType<ITestService, TestService>();
-
             container.RegisterType(typeof(IAppServiceBase<>), (typeof(AppServiceBase<>)));
             container.RegisterType(typeof(IMarcaAppService), (typeof(MarcaAppService)));
             container.RegisterType(typeof(IModeloAppService), (typeof(ModeloAppService)));
+            container.RegisterType(typeof(IPatrimonioAppService), (typeof(PatrimonioAppService)));
 
 
             container.RegisterType(typeof(IServiceBase<>), (typeof(ServiceBase<>)));
             container.RegisterType(typeof(IMarcaService), (typeof(MarcaService)));
             container.RegisterType(typeof(IModeloService), (typeof(ModeloService)));
-
+            container.RegisterType(typeof(IPatrimonioService), (typeof(PatrimonioService)));
 
             container.RegisterType(typeof(IRepositoryBase<>), (typeof(RepositoryBase<>)));
             container.RegisterType(typeof(IMarcaRepository), (typeof(MarcaRepository)));
             container.RegisterType(typeof(IModeloRepository), (typeof(ModeloRepository)));
-
-
-            //            kernel.Bind(typeof(IServiceBase<>)).To(typeof(ServiceBase<>));
-            //kernel.Bind<IMarcaService>().To<IMarcaService>();
-            //            kernel.Bind<IModeloService>().To<IModeloService>();
-
-            //            kernel.Bind(typeof(IRepositoryBase<>)).To(typeof(RepositoryBase<>));
-            //kernel.Bind<IMarcaRepository>().To<IMarcaRepository>();
-            //            kernel.Bind<IModeloRepository>().To<IModeloRepository>();
-
-
-
-
+            container.RegisterType(typeof(IPatrimonioRepository), (typeof(PatrimonioRepository)));
 
             GlobalConfiguration.Configuration.DependencyResolver = new UnityDependencyResolver(container);
         }

@@ -34,12 +34,15 @@
     <Compile Include="Entities\Modelo.cs" />
     <Compile Include="Entities\Patrimonio.cs" />
     <Compile Include="Interfaces\Repositories\IMarcaRepository.cs" />
+    <Compile Include="Interfaces\Repositories\IPatrimonioRepository.cs" />
     <Compile Include="Interfaces\Repositories\IModeloRepository.cs" />
     <Compile Include="Interfaces\Repositories\IRepositoryBase.cs" />
     <Compile Include="Interfaces\Services\IMarcaService.cs" />
+    <Compile Include="Interfaces\Services\IPatrimonioService.cs" />
     <Compile Include="Interfaces\Services\IModeloService.cs" />
     <Compile Include="Interfaces\Services\IServiceBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PatrimonioService.cs" />
     <Compile Include="Services\ModeloService.cs" />
     <Compile Include="Services\MarcaService.cs" />
     <Compile Include="Services\ServiceBase.cs" />

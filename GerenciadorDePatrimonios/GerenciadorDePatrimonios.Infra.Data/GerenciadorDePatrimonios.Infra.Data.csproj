@@ -53,6 +53,7 @@
     <Compile Include="EntityConfig\PatrimonioConfiguration.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\PatrimonioRepository.cs" />
     <Compile Include="Repositories\MarcaRepository.cs" />
     <Compile Include="Repositories\ModeloRepository.cs" />
     <Compile Include="Repositories\RepositoryBase.cs" />

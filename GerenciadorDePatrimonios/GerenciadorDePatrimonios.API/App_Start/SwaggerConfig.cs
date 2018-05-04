@@ -2,6 +2,9 @@ using System.Web.Http;
 using WebActivatorEx;
 using GerenciadorDePatrimonios.API;
 using Swashbuckle.Application;
+using Swashbuckle.Swagger;
+using System;
+using GerenciadorDePatrimonios.API.Models;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
@@ -119,7 +122,7 @@ namespace GerenciadorDePatrimonios.API
                     // If you want to post-modify "complex" Schemas once they've been generated, across the board or for a
                     // specific type, you can wire up one or more Schema filters.
                     //
-                    //c.SchemaFilter<ApplySchemaVendorExtensions>();
+                    c.SchemaFilter<SchemaModel>();
 
                     // In a Swagger 2.0 document, complex types are typically declared globally and referenced by unique
                     // Schema Id. By default, Swashbuckle does NOT use the full type name in Schema Ids. In most cases, this
@@ -254,7 +257,25 @@ namespace GerenciadorDePatrimonios.API
 
         protected static string GetXmlCommentsPath()
         {
-            return System.String.Format(@"{0}\bin\Swagger.XML", System.AppDomain.CurrentDomain.BaseDirectory);
+            return System.String.Format(@"{0}\bin\GerenciadorDePatrimonios.API.xml", System.AppDomain.CurrentDomain.BaseDirectory);
+        }
+        public class SchemaModel : ISchemaFilter
+        {
+            public void Apply(Schema schema, SchemaRegistry schemaRegistry, Type type)
+            {
+                if (type == typeof(PatrimonioModel))
+                {
+                    schema.example = new PatrimonioModel
+                    {
+                        PatrimonioId = 1,
+                        Nome = "Celular",
+                        MarcaId = 2,
+                        ModeloId = 3,
+                        Descricao = " "
+                    };
+                }
+                
+            }
         }
     }
 }
