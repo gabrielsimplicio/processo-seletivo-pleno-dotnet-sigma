@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
+using Swashbuckle.Application;
 using System.Web.Http;
 
 namespace GerenciadorDePatrimonios.API
@@ -29,6 +30,8 @@ namespace GerenciadorDePatrimonios.API
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+         
         }
     }
 }
