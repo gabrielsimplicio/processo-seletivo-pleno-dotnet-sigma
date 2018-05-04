@@ -132,7 +132,7 @@
 - Unity WebApi
 - Documentação com Swagger
 - Endpoints no formato JSON
-
+- Github
 ---
 
 
@@ -140,6 +140,7 @@
 
 - Clone ou baixe o repositório.
 - Execute a aplicação
-- No Swagger, Clique em Marcas e logo em seguida execute (GET marcas) para obter todas as marcas, 
+- A pagina inicial do Swagger Gerenciador de Patrimonios ira abrir.
+- Clique em Marcas e logo em seguida execute (GET marcas) para obter todas as marcas, 
  <br> dessa fora o Entity Framework atraves do  "Database.SetInitializer" ira criar as tabelas,ralações e inserções em 
  <br> todas as tabelas para melhor experiencia do usuario, dessa forma não sera necessário cadastrar um Marca e um Modelo antes de criar um Patrominio.

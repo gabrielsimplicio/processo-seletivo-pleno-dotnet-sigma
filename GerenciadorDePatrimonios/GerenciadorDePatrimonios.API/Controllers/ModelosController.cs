@@ -49,12 +49,29 @@ namespace GerenciadorDePatrimonios.API.Controllers
                 var resultado = _modeloApp.GetById(modeloId);
                 return Request.CreateResponse(HttpStatusCode.OK, resultado);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao listar modelos");
             }
 
         }
+
+        [Route("marcas/{marcaId}/modelos")]
+        [ResponseType(typeof(IEnumerable<Modelo>))]
+        public HttpResponseMessage GetModeloPorMarcaId(int marcaId)
+        {
+            try
+            {
+                var resultado = _modeloApp.BuscarPorMarcaId(marcaId);
+                return Request.CreateResponse(HttpStatusCode.OK, resultado);
+            }
+            catch (Exception)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, "Falha ao listar modelos por marca");
+            }
+
+        }
+
 
         [Route("modelos")]
         [ResponseType(typeof(IEnumerable<Modelo>))]
