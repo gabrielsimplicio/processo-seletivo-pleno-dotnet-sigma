@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace GerenciadorDePatrimonios.API.Controllers
 {
@@ -19,8 +20,9 @@ namespace GerenciadorDePatrimonios.API.Controllers
         {
             _marcaApp = marcaApp;
         }
-        [HttpGet]
+
         [Route("marcas")]
+        [ResponseType(typeof(IEnumerable<Marca>))]
         public HttpResponseMessage GetMarca()
         {
             try
@@ -36,6 +38,7 @@ namespace GerenciadorDePatrimonios.API.Controllers
         }
 
         [Route("marcas/{marcaId}")]
+        [ResponseType(typeof(IEnumerable<Marca>))]
         public HttpResponseMessage GetMarcaPorId(int marcaId)
         {
             try
@@ -51,6 +54,7 @@ namespace GerenciadorDePatrimonios.API.Controllers
         }
 
         [Route("marcas")]
+        [ResponseType(typeof(IEnumerable<Marca>))]
         public HttpResponseMessage PostMarca(MarcaModel marca)
         {
             try
@@ -94,6 +98,7 @@ namespace GerenciadorDePatrimonios.API.Controllers
 
         [HttpPut]
         [Route("marcas")]
+        [ResponseType(typeof(IEnumerable<MarcaModel>))]
         public HttpResponseMessage PutMarca(MarcaModel marca)
         {
             try
@@ -131,6 +136,7 @@ namespace GerenciadorDePatrimonios.API.Controllers
 
         [HttpDelete]
         [Route("marcas")]
+        [ResponseType(typeof(IEnumerable<Marca>))]
         public HttpResponseMessage DeleteMarca(int marcaId)
         {
             try
